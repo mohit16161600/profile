@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 5 Tips to Write Clean Code - Mohit Koli Blog</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* ----- Blog Specific Styles ----- */
+    .blog-hero {
+      text-align: center;
+      padding: 100px 20px 60px;
+      background: linear-gradient(135deg, var(--accent-3), var(--accent-2));
+      color: var(--text);
+      border-radius: 0 0 50px 50px;
+    }
+    .blog-hero h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: bold; margin-bottom: 10px; }
+    .blog-hero .subtitle { font-size: clamp(0.9rem, 2.5vw, 1.2rem); opacity: 0.9; }
+
+    .blog-content-article {
+      padding: 28px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.06);
+      backdrop-filter: blur(12px);
+      background: var(--glass);
+      max-width: 800px;
+      margin: 40px auto;
+      line-height: 1.65;
+    }
+    .blog-content-article h2 { margin-top: 24px; font-size: 1.5rem; color: var(--accent-2); }
+    .blog-content-article p { font-size: 1rem; color: var(--text); margin-top: 12px; }
+    .blog-content-article code { background: rgba(255,255,255,0.05); padding: 2px 6px; border-radius: 4px; }
+
+    .blog-content-article img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    .btn-back {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 10px 20px;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      color: #091026;
+      background: linear-gradient(90deg, var(--accent-3), var(--accent-2));
+      transition: transform 0.3s, filter 0.3s;
+    }
+    .btn-back:hover { transform: translateY(-4px); filter: saturate(1.1); }
+
+    /* Responsive Adjustments */
+    @media (max-width: 980px) {
+      .blog-hero { padding: 80px 20px 50px; }
+      .blog-content-article { padding: 20px; margin: 30px 20px; }
+    }
+    @media (max-width: 640px) {
+      .blog-hero h1 { font-size: 2rem; }
+      .blog-hero .subtitle { font-size: 0.9rem; }
+      .blog-content-article { padding: 18px; margin: 20px 10px; }
+      .blog-content-article h2 { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Particles + Blobs -->
+  <div id="particles"></div>
+  <div class="blobs">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">Mohit Koli</a>
+      <button id="nav-toggle">☰</button>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../about.html" class="nav-link">About</a>
+        <a href="../projects.html" class="nav-link">Projects</a>
+        <a href="../blog.html" class="nav-link active">Blog</a>
+        <a href="../contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Blog Hero -->
+  <section class="blog-hero">
+    <div class="container">
+      <h1>Top 5 Tips to Write Clean Code</h1>
+      <p class="subtitle">📅 August 20, 2025 | #Coding #WebDevelopment</p>
+    </div>
+  </section>
+
+  <!-- Blog Content -->
+  <section class="section">
+    <div class="container">
+      <article class="blog-content-article">
+        <p>Writing clean code is an essential skill for every developer. It makes your code easier to read, maintain, and scale. Here are my top 5 tips to help you write clean and professional code:</p>
+        
+        <h2>1. Use Meaningful Variable and Function Names</h2>
+        <p>Names should describe exactly what the variable, function, or class represents. Avoid generic names like x, y, temp. Instead, use descriptive names like <code>userAge</code> or <code>calculateInvoiceTotal()</code>.</p>
+        
+        <h2>2. Keep Functions Small and Focused</h2>
+        <p>Each function should do one thing and do it well. If a function is too long or doing multiple things, break it down into smaller helper functions.</p>
+        
+        <h2>3. Follow Consistent Formatting</h2>
+        <p>Indentation, spacing, and bracket placement should be consistent throughout your project. Using a linter or code formatter like Prettier can help maintain consistency.</p>
+        
+        <h2>4. Comment Wisely</h2>
+        <p>Comments should explain why something is done, not what is being done. Well-written code often speaks for itself; avoid obvious comments.</p>
+        
+        <h2>5. Avoid Code Duplication</h2>
+        <p>If you notice repeating code, extract it into a reusable function or module. This reduces bugs and makes maintenance easier.</p>
+        
+        <p>By following these tips, your code will be cleaner, more readable, and professional. Always remember: clean code is maintainable code!</p>
+
+        <a href="../blog.html" class="btn-back">← Back to Blog</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Mohit Koli. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

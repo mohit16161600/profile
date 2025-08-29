@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohit Koli | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-900">Mohit Koli</h1>
+      <nav>
+        <ul class="hidden md:flex space-x-6 text-sm font-medium">
+          <li><a href="#about" class="hover:text-blue-700">About</a></li>
+          <li><a href="#qualification" class="hover:text-blue-700">Qualification</a></li>
+          <li><a href="#projects" class="hover:text-blue-700">Projects</a></li>
+          <li><a href="#experience" class="hover:text-blue-700">Experience</a></li>
+          <li><a href="#skills" class="hover:text-blue-700">Skills</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-blue-900 to-blue-600 text-white py-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Mohit 👋</h2>
+      <p class="text-lg md:text-xl mb-6">Web Developer with 2+ years of experience building professional websites and applications.</p>
+      <a href="#projects" class="bg-emerald-500 text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-emerald-600 transition">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h3 class="text-3xl font-bold text-center mb-8 text-blue-900">About Me</h3>
+      <p class="text-center text-gray-600">
+        I’m a passionate web developer with 2 years of experience in designing, developing, and maintaining responsive websites and web applications.
+        I enjoy turning complex problems into simple, beautiful, and intuitive solutions.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Qualification -->
+  <section id="qualification" class="py-16 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h3 class="text-3xl font-bold text-center mb-12 text-blue-900">Qualification</h3>
+      <ul class="space-y-4">
+        <li class="bg-white shadow p-4 rounded-lg border-l-4 border-blue-600">Bachelor’s Degree in Computer Science - 2019-2023</li>
+        <li class="bg-white shadow p-4 rounded-lg border-l-4 border-blue-600">Certification in Web Development - 2024</li>
+        <li class="bg-white shadow p-4 rounded-lg border-l-4 border-blue-600">Data Structure and Algorithm - 2021</li>
+        
+      </ul>
+    </div>
+  </section>
+
+    <!-- Services / Maintenance Section -->
+    <section id="services" class="py-16 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h3 class="text-3xl font-bold text-center mb-12 text-blue-900">Website Review & Maintenance</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+  
+          <!-- PHP Pages -->
+          <div class="bg-white shadow-lg rounded-lg p-6 border-t-4 border-blue-600">
+            <h4 class="text-xl font-semibold mb-4">1. PHP Pages</h4>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+              <li>Check forms, buttons, and pages for correct functionality</li>
+              <li>Ensure clean and modern code (avoid deprecated functions)</li>
+              <li>Improve page load times & remove unnecessary queries</li>
+            </ul>
+          </div>
+  
+          <!-- Database -->
+          <div class="bg-white shadow-lg rounded-lg p-6 border-t-4 border-blue-600">
+            <h4 class="text-xl font-semibold mb-4">2. Database Connections</h4>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+              <li>Secure and stable DB connections (PDO / MySQLi)</li>
+              <li>Proper error handling for failed connections</li>
+              <li>No hardcoded credentials in live code</li>
+            </ul>
+          </div>
+  
+          <!-- Lead Capture -->
+          <div class="bg-white shadow-lg rounded-lg p-6 border-t-4 border-blue-600">
+            <h4 class="text-xl font-semibold mb-4">3. Lead Capture & CRM Integration</h4>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+              <li>Verify form submissions are stored properly</li>
+              <li>Ensure CRM integration is working (no lost/duplicate leads)</li>
+              <li>Check correct field mapping between forms and CRM</li>
+            </ul>
+          </div>
+  
+          <!-- Site Maintenance -->
+          <div class="bg-white shadow-lg rounded-lg p-6 border-t-4 border-blue-600">
+            <h4 class="text-xl font-semibold mb-4">4. Site Maintenance</h4>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+              <li>Bug fixes & content updates</li>
+              <li>Plugin/module updates</li>
+              <li>Optimize page load performance</li>
+              <li>Remove unused scripts/files</li>
+            </ul>
+          </div>
+  
+          <!-- Security -->
+          <div class="bg-white shadow-lg rounded-lg p-6 border-t-4 border-blue-600 md:col-span-2">
+            <h4 class="text-xl font-semibold mb-4">5. Security</h4>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+              <li>Input validation & sanitization (prevent XSS, SQL injection)</li>
+              <li>Enforce HTTPS on all pages</li>
+              <li>Restrict admin access (role-based control)</li>
+              <li>Protect credentials, API keys & sensitive data</li>
+              <li>Perform regular security scans & audits</li>
+            </ul>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+  
+
+  <!-- Projects -->
+  <section id="projects" class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      
+      <h3 class="text-3xl font-bold text-center mb-12 text-blue-900">Projects</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition border-t-4 border-blue-600">
+          <h4 class="text-xl font-semibold mb-2">Get Fast Education</h4>
+          <p class="text-gray-600">Launched and developed “Get Fast Education,” a streamlined platform offering personalized admission counselling for Indian students applying to both domestic and international universities.</p>
+          <a href="https://getfasteducation.in"><i>https://getfasteducation.in</i></a>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition border-t-4 border-blue-600">
+          <h4 class="text-xl font-semibold mb-2">Vision Sheen</h4>
+          <p class="text-gray-600">Developed and maintained the Vision Sheen website, showcasing a diverse range of high-performance projectors, projection screens, and AV accessories tailored for home, education, and professional use.
+            Supported Scorpio Infosolutions’ decade-plus legacy in visual technology by enhancing product presentation, navigation, and user engagement across the Vision and Sheen brands.</p>
+          <a href="https://visionsheen.in"><i>https://visionsheen.in</i></a>
+          <a href=""><i></i></a>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition border-t-4 border-blue-600">
+          <h4 class="text-xl font-semibold mb-2">Project Three</h4>
+          <p class="text-gray-600">Developed and maintained the official website for Vinayak Hospital, enhancing online presence and accessibility for a multi-specialty healthcare facility. Focused on responsive design, SEO optimization, and user-friendly navigation.</p>
+          <a href="https://www.vinayakhospital.co.in"><i>https://www.vinayakhospital.co.in/</i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h3 class="text-3xl font-bold text-center mb-12 text-blue-900">Professional Experience</h3>
+      <div class="space-y-6">
+        <div class="bg-white shadow rounded-lg p-6 border-l-4 border-emerald-500">
+          <h4 class="text-xl font-semibold">Web Developer</h4>
+          <p class="text-gray-500">Sheopals Pvt Ltd (2025 Present)</p>
+          <p class="text-gray-600 mt-2">Created responsive websites using HTML, CSS, JavaScript, and PHP, collaborated with clients, and delivered tailored web solutions.</p>
+        </div>
+        
+        <div class="bg-white shadow rounded-lg p-6 border-l-4 border-emerald-500">
+          <h4 class="text-xl font-semibold">Web Developer - Shopify Developer</h4>
+          <p class="text-gray-500">GPDM Agency llp (2024 - 2025)</p>
+          <p class="text-gray-600 mt-2">Developed custom Shopify themes, integrated third-party apps, and improved storefront UX and performance.</p>
+        </div>
+        
+        <div class="bg-white shadow rounded-lg p-6 border-l-4 border-emerald-500">
+          <h4 class="text-xl font-semibold">Web Developer - WordPress Developer</h4>
+          <p class="text-gray-500">Danstring Technology (2023 - 2024)</p>
+          <p class="text-gray-600 mt-2">Built and customized WordPress themes and plugins, maintained website performance, and ensured responsive, SEO-friendly designs.</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Skills -->
+  <section id="skills" class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h3 class="text-3xl font-bold text-center mb-12 text-blue-900">Skills & Technology</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+        <div class="bg-white shadow rounded-lg p-6 border-b-4 border-blue-600">HTML5</div>
+        <div class="bg-white shadow rounded-lg p-6 border-b-4 border-blue-600">CSS3</div>
+        <div class="bg-white shadow rounded-lg p-6 border-b-4 border-blue-600">C/C++</div>
+        <div class="bg-white shadow rounded-lg p-6 border-b-4 border-blue-600">JavaScript</div>
+        <div class="bg-white shadow rounded-lg p-6 border-b-4 border-blue-600">PHP</div>
+        <div class="bg-white shadow rounded-lg p-6 border-b-4 border-blue-600">React.js</div>
+        <div class="bg-white shadow rounded-lg p-6 border-b-4 border-blue-600">Python</div>
+        <div class="bg-white shadow rounded-lg p-6 border-b-4 border-blue-600">Tailwind CSS</div>
+        <div class="bg-white shadow rounded-lg p-6 border-b-4 border-blue-600">Node.js</div>
+        <div class="bg-white shadow rounded-lg p-6 border-b-4 border-blue-600">MYSQL</div>
+        <div class="bg-white shadow rounded-lg p-6 border-b-4 border-blue-600">Git & GitHub</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h3 class="text-3xl font-bold text-center mb-12 text-blue-900">Get In Touch</h3>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      
+      <!-- Left Side: Contact Info -->
+      <div class="bg-white shadow-lg rounded-lg p-8 border border-gray-200">
+        <h4 class="text-xl font-semibold text-blue-800 mb-4">Connect With Me</h4>
+        <p class="text-gray-600 mb-4">
+          Ready to bring your project to life? I'm available for freelance projects and full-time opportunities.
+        </p>
+        <p class="text-gray-600 mb-6">
+          Whether you need a custom web application, web services, or enterprise solution – let's discuss how I can help.
+        </p>
+
+        <!-- Contact Details -->
+        <ul class="space-y-3">
+          <li class="flex items-center space-x-3">
+            <span class="text-blue-600">📞</span>
+            <span class="text-gray-700">+91 8383868837</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <span class="text-blue-600">📧</span>
+            <span class="text-gray-700">contact@mohitkoli.info</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <span class="text-blue-600">📩</span>
+            <span class="text-gray-700">mohitkoli12162@gmail.com</span>
+          </li>
+        </ul>
+
+        <!-- Social Links -->
+        <div class="flex space-x-5 mt-6 text-2xl text-gray-600">
+          <a href="https://github.com/mohit16161600" class="hover:text-blue-600"><img style="width:20px;" src="assets/github.png"></a> <!-- GitHub -->
+          <a href="https://www.linkedin.com/in/mohit-koli-b47260213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="hover:text-blue-600"><img style="width:20px;"  src="assets/linkedin.png" ></a> <!-- LinkedIn -->
+          <!-- <a href="#" class="hover:text-pink-500">📸</a>  -->
+        </div>
+      </div>
+
+      <!-- Right Side: Contact Form -->
+      <div class="bg-white shadow-lg rounded-lg p-8 border border-gray-200">
+        <h4 class="text-xl font-semibold text-blue-800 mb-6">Start a Project</h4>
+        <form class="space-y-4">
+          <input type="text" placeholder="Your Name" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+          <input type="email" placeholder="Your Email" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+          <input type="tel" placeholder="Your Phone" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+          <textarea placeholder="Tell me about your project requirements" rows="4" class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+          <button type="submit" class="w-full bg-blue-700 text-white py-3 rounded-md font-semibold hover:bg-blue-800 transition">
+            Let's Collaborate
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+  <footer class="bg-blue-900 text-white py-6 text-center">
+  <p>© 2025 Mohit Koli. All Rights Reserved.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
