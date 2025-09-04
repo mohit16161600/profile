@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohit Koli | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 ">
+
+  <!-- Navbar -->
+  <header id="header-main" class="bg-white shadow sticky z-999">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-900">Mohit Koli</h1>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:block">
+        <ul class="flex space-x-6 text-sm font-medium">
+          <li><a href="#about" class="hover:text-blue-700">About</a></li>
+          <li><a href="#qualification" class="hover:text-blue-700">Qualification</a></li>
+          <li><a href="#work" class="hover:text-blue-700">My Work</a></li>
+          <li><a href="#experience" class="hover:text-blue-700">Experience</a></li>
+          <li><a href="#skills" class="hover:text-blue-700">Skills</a></li>
+          <li><a href="blogs/blogs.html" class="hover:text-blue-700">Blog</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger -->
+      <button
+        id="menu-btn"
+        class="md:hidden flex flex-col space-y-1.5 focus:outline-none"
+        aria-controls="mobile-drawer"
+        aria-expanded="false"
+        aria-label="Open menu"
+      >
+        <span class="w-6 h-0.5 bg-gray-800"></span>
+        <span class="w-6 h-0.5 bg-gray-800"></span>
+        <span class="w-6 h-0.5 bg-gray-800"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Overlay -->
+  <div
+    id="overlay"
+    class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out z-40"
+  ></div>
+
+  <!-- Right Drawer -->
+  <nav
+    id="mobile-drawer"
+    class="fixed right-0 top-0 h-full w-72 max-w-[85vw] bg-white shadow-lg z-50 translate-x-full transition-transform duration-300 ease-in-out md:hidden"
+    aria-labelledby="menu-btn"
+  >
+    <div class="px-6 py-4 flex items-center justify-between border-b">
+      <span class="text-base font-semibold">Menu</span>
+      <button id="close-btn" class="p-2 rounded hover:bg-gray-100" aria-label="Close menu">
+        <!-- simple X icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <ul class="flex flex-col space-y-3 px-6 py-4 text-sm font-medium" role="menu" aria-label="Mobile navigation">
+      <li><a href="#about" class="hover:text-blue-700 mobile-menu-link" role="menuitem">About</a></li>
+      <li><a href="#qualification" class="hover:text-blue-700 mobile-menu-link" role="menuitem">Qualification</a></li>
+      <li><a href="#work" class="hover:text-blue-700 mobile-menu-link" role="menuitem">My Work</a></li>
+      <li><a href="#experience" class="hover:text-blue-700 mobile-menu-link" role="menuitem">Experience</a></li>
+      <li><a href="#skills" class="hover:text-blue-700 mobile-menu-link" role="menuitem">Skills</a></li>
+      <li><a href="blogs/blogs.html" class="hover:text-blue-700 mobile-menu-link" role="menuitem">Blog</a></li>
+    </ul>
+  </nav>
+
+  <!-- Demo content sections -->
+  <main class="min-h-screen">
+    <section id="about" class="min-h-screen flex items-center justify-center bg-blue-50">
+      <div class="text-center">
+        <h2 class="text-4xl font-bold mb-4">About Section</h2>
+        <p class="text-lg text-gray-600">This is the about section content.</p>
+      </div>
+    </section>
+
+    <section id="qualification" class="min-h-screen flex items-center justify-center bg-green-50">
+      <div class="text-center">
+        <h2 class="text-4xl font-bold mb-4">Qualification Section</h2>
+        <p class="text-lg text-gray-600">This is the qualification section content.</p>
+      </div>
+    </section>
+
+    <section id="work" class="min-h-screen flex items-center justify-center bg-purple-50">
+      <div class="text-center">
+        <h2 class="text-4xl font-bold mb-4">My Work Section</h2>
+        <p class="text-lg text-gray-600">This is the work section content.</p>
+      </div>
+    </section>
+
+    <section id="experience" class="min-h-screen flex items-center justify-center bg-yellow-50">
+      <div class="text-center">
+        <h2 class="text-4xl font-bold mb-4">Experience Section</h2>
+        <p class="text-lg text-gray-600">This is the experience section content.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="min-h-screen flex items-center justify-center bg-red-50">
+      <div class="text-center">
+        <h2 class="text-4xl font-bold mb-4">Skills Section</h2>
+        <p class="text-lg text-gray-600">This is the skills section content.</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-btn');
+    const drawer = document.getElementById('mobile-drawer');
+    const overlay = document.getElementById('overlay');
+    const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+    function openDrawer() {
+      drawer.classList.remove('translate-x-full');
+      overlay.classList.remove('pointer-events-none');
+      overlay.classList.add('opacity-100');
+      btn.setAttribute('aria-expanded', 'true');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeDrawer() {
+      drawer.classList.add('translate-x-full');
+      overlay.classList.add('pointer-events-none');
+      overlay.classList.remove('opacity-100');
+      btn.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    btn.addEventListener('click', openDrawer);
+    overlay.addEventListener('click', closeDrawer);
+    closeBtn.addEventListener('click', closeDrawer);
+
+    // Auto-close drawer when clicking on any mobile menu link
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        // Small delay to allow smooth navigation before closing
+        setTimeout(() => {
+          closeDrawer();
+        }, 100);
+      });
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeDrawer();
+    });
+  </script>
+</body>
+</html>

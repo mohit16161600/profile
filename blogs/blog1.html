@@ -1,135 +1,559 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Top 5 Tips to Write Clean Code - Mohit Koli Blog</title>
-  <link rel="stylesheet" href="../style.css">
-  <style>
-    /* ----- Blog Specific Styles ----- */
-    .blog-hero {
-      text-align: center;
-      padding: 100px 20px 60px;
-      background: linear-gradient(135deg, var(--accent-3), var(--accent-2));
-      color: var(--text);
-      border-radius: 0 0 50px 50px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Complete Guide to AI in Web Development 2025 | TechBlog</title>
+    <meta name="description" content="Discover how AI is revolutionizing web development in 2025. Learn about AI-powered coding tools, automated testing, and intelligent UX optimization. Complete guide with examples and best practices.">
+    <meta name="keywords" content="AI web development, artificial intelligence coding, AI tools 2025, automated web development, machine learning frontend, AI UX optimization">
+    <meta name="author" content="Mohit Koli">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="#">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Complete Guide to AI in Web Development 2025">
+    <meta property="og:description" content="Discover how AI is revolutionizing web development in 2025. Learn about AI-powered coding tools, automated testing, and intelligent UX optimization.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="#">
+    <meta property="og:image" content="https://techblog.com/images/ai-web-development-2025.jpg">
+    <meta property="og:site_name" content="Blog">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Complete Guide to AI in Web Development 2025">
+    <meta name="twitter:description" content="Discover how AI is revolutionizing web development in 2025. Learn about AI-powered coding tools and best practices.">
+    <meta name="twitter:image" content="https://techblog.com/images/ai-web-development-2025.jpg">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Complete Guide to AI in Web Development 2025",
+      "description": "Discover how AI is revolutionizing web development in 2025. Learn about AI-powered coding tools, automated testing, and intelligent UX optimization.",
+      "author": {
+        "@type": "Person",
+        "name": "Mohit Koli"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Mohit Koli",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://techblog.com/logo.png"
+        }
+      },
+      "datePublished": "2025-01-15",
+      "dateModified": "2025-01-15",
+      "image": "https://techblog.com/images/ai-web-development-2025.jpg",
+      "url": "#"
     }
-    .blog-hero h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: bold; margin-bottom: 10px; }
-    .blog-hero .subtitle { font-size: clamp(0.9rem, 2.5vw, 1.2rem); opacity: 0.9; }
-
-    .blog-content-article {
-      padding: 28px;
-      border-radius: 18px;
-      border: 1px solid rgba(255,255,255,0.06);
-      backdrop-filter: blur(12px);
-      background: var(--glass);
-      max-width: 800px;
-      margin: 40px auto;
-      line-height: 1.65;
-    }
-    .blog-content-article h2 { margin-top: 24px; font-size: 1.5rem; color: var(--accent-2); }
-    .blog-content-article p { font-size: 1rem; color: var(--text); margin-top: 12px; }
-    .blog-content-article code { background: rgba(255,255,255,0.05); padding: 2px 6px; border-radius: 4px; }
-
-    .blog-content-article img {
-      max-width: 100%;
-      border-radius: 12px;
-      margin: 20px 0;
-    }
-
-    .btn-back {
-      display: inline-block;
-      margin-top: 24px;
-      padding: 10px 20px;
-      border-radius: 999px;
-      font-weight: 600;
-      text-decoration: none;
-      color: #091026;
-      background: linear-gradient(90deg, var(--accent-3), var(--accent-2));
-      transition: transform 0.3s, filter 0.3s;
-    }
-    .btn-back:hover { transform: translateY(-4px); filter: saturate(1.1); }
-
-    /* Responsive Adjustments */
-    @media (max-width: 980px) {
-      .blog-hero { padding: 80px 20px 50px; }
-      .blog-content-article { padding: 20px; margin: 30px 20px; }
-    }
-    @media (max-width: 640px) {
-      .blog-hero h1 { font-size: 2rem; }
-      .blog-hero .subtitle { font-size: 0.9rem; }
-      .blog-content-article { padding: 18px; margin: 20px 10px; }
-      .blog-content-article h2 { font-size: 1.3rem; }
-    }
-  </style>
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-
-  <!-- Background Particles + Blobs -->
-  <div id="particles"></div>
-  <div class="blobs">
-    <div class="blob b1"></div>
-    <div class="blob b2"></div>
-    <div class="blob b3"></div>
-  </div>
-
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="../index.html" class="brand">Mohit Koli</a>
-      <button id="nav-toggle">☰</button>
-      <nav class="nav">
-        <a href="../index.html" class="nav-link">Home</a>
-        <a href="../about.html" class="nav-link">About</a>
-        <a href="../projects.html" class="nav-link">Projects</a>
-        <a href="../blog.html" class="nav-link active">Blog</a>
-        <a href="../contact.html" class="nav-link">Contact</a>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header id="header-main" class="bg-white shadow sticky top-0 z-999">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+          <h1 class="text-xl font-bold text-blue-900">Mohit Koli</h1>
+    
+          <!-- Desktop Menu -->
+          <nav class="hidden md:block">
+            <ul class="flex space-x-6 text-sm font-medium">
+              <li><a href="../#about" class="hover:text-blue-700">About</a></li>
+              <li><a href="../#qualification" class="hover:text-blue-700">Qualification</a></li>
+              <li><a href="../#work" class="hover:text-blue-700">My Work</a></li>
+              <li><a href="../#experience" class="hover:text-blue-700">Experience</a></li>
+              <li><a href="../#skills" class="hover:text-blue-700">Skills</a></li>
+              <li><a href="../blogs/blogs.html" class="hover:text-blue-700">Blog</a></li>
+            </ul>
+          </nav>
+    
+          <!-- Mobile Hamburger -->
+          <button
+            id="menu-btn"
+            class="md:hidden flex flex-col space-y-1.5 focus:outline-none"
+            aria-controls="mobile-drawer"
+            aria-expanded="false"
+            aria-label="Open menu"
+          >
+            <span class="w-6 h-0.5 bg-gray-800"></span>
+            <span class="w-6 h-0.5 bg-gray-800"></span>
+            <span class="w-6 h-0.5 bg-gray-800"></span>
+          </button>
+        </div>
+      </header>
+    
+      <!-- Overlay -->
+      <div
+        id="overlay"
+        class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out z-40"
+      ></div>
+    
+      <!-- Right Drawer -->
+      <nav
+        id="mobile-drawer"
+        class="fixed right-0 top-0 h-full w-72 max-w-[85vw] bg-white shadow-lg z-50 translate-x-full transition-transform duration-300 ease-in-out md:hidden"
+        aria-labelledby="menu-btn"
+      >
+        <div class="px-6 py-4 flex items-center justify-between border-b">
+          <span class="text-base font-semibold">Menu</span>
+          <button id="close-btn" class="p-2 rounded hover:bg-gray-100" aria-label="Close menu">
+            <!-- simple X icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+        <ul class="flex flex-col space-y-3 px-6 py-4 text-sm font-medium" role="menu" aria-label="Mobile navigation">
+          <li><a href="../#about" class="hover:text-blue-700 mobile-menu-link" role="menuitem">About</a></li>
+          <li><a href="../#qualification" class="hover:text-blue-700 mobile-menu-link" role="menuitem">Qualification</a></li>
+          <li><a href="../#work" class="hover:text-blue-700 mobile-menu-link" role="menuitem">My Work</a></li>
+          <li><a href="../#experience" class="hover:text-blue-700 mobile-menu-link" role="menuitem">Experience</a></li>
+          <li><a href="../#skills" class="hover:text-blue-700 mobile-menu-link" role="menuitem">Skills</a></li>
+          <li><a href="../blogs.html" class="hover:text-blue-700 mobile-menu-link" role="menuitem">Blog</a></li>
+        </ul>
       </nav>
+    
+      <script>
+        const btn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const drawer = document.getElementById('mobile-drawer');
+        const overlay = document.getElementById('overlay');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link')
+    
+        function openDrawer() {
+          drawer.classList.remove('translate-x-full');
+          overlay.classList.remove('pointer-events-none');
+          overlay.classList.add('opacity-100');
+          btn.setAttribute('aria-expanded', 'true');
+          document.body.classList.add('overflow-hidden');
+        }
+    
+        function closeDrawer() {
+          drawer.classList.add('translate-x-full');
+          overlay.classList.add('pointer-events-none');
+          overlay.classList.remove('opacity-100');
+          btn.setAttribute('aria-expanded', 'false');
+          document.body.classList.remove('overflow-hidden');
+        }
+    
+        btn.addEventListener('click', openDrawer);
+        overlay.addEventListener('click', closeDrawer);
+        closeBtn.addEventListener('click', closeDrawer);
+    
+        mobileMenuLinks.forEach(link => {
+          link.addEventListener('click', (e) => {
+            // Small delay to allow smooth navigation before closing
+            setTimeout(() => {
+              closeDrawer();
+            }, 100);
+          });
+        });
+    
+        // Close on Escape
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') closeDrawer();
+        });
+      </script>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="lg:grid lg:grid-cols-4 lg:gap-8">
+            <!-- Article Content -->
+            <article class="lg:col-span-3">
+                <!-- Breadcrumb -->
+                <nav class="mb-6">
+                    <ol class="flex items-center space-x-2 text-sm text-gray-500">
+                        <li><a href="/" class="hover:text-blue-600">Home</a></li>
+                        <li>/</li>
+                        <li><a href="/blog" class="hover:text-blue-600">Blog</a></li>
+                        <li>/</li>
+                        <li class="text-gray-900">AI in Web Development</li>
+                    </ol>
+                </nav>
+
+                <!-- Article Header -->
+                <header class="mb-8">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                        Complete Guide to AI in Web Development: How Artificial Intelligence is Revolutionizing Coding in 2025
+                    </h1>
+                    
+                    <div class="flex items-center justify-between mb-6 text-sm text-gray-600">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mr-3"></div>
+                                <div>
+                                    <p class="font-medium text-gray-900">Mohit Koli</p>
+                                    <p class="text-gray-500">Senior Full Stack Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p>January 15, 2025</p>
+                            <p>12 min read</p>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="h-64 md:h-96 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-8"></div> -->
+                    <img src="../assets/b1.png" alt="blog image" class="rounded-lg">
+                </header>
+
+                <!-- Table of Contents -->
+                <div class="bg-gray-100 rounded-lg p-6 mb-8">
+                    <h2 class="text-xl font-bold text-gray-900 mb-4">Table of Contents</h2>
+                    <ul class="space-y-2 text-blue-600">
+                        <li><a href="#introduction" class="hover:underline">1. Introduction to AI in Web Development</a></li>
+                        <li><a href="#ai-coding-tools" class="hover:underline">2. Top AI Coding Tools in 2025</a></li>
+                        <li><a href="#automated-testing" class="hover:underline">3. AI-Powered Automated Testing</a></li>
+                        <li><a href="#ux-optimization" class="hover:underline">4. Intelligent UX Optimization</a></li>
+                        <li><a href="#performance" class="hover:underline">5. AI for Performance Optimization</a></li>
+                        <li><a href="#future-trends" class="hover:underline">6. Future Trends and Predictions</a></li>
+                        <li><a href="#conclusion" class="hover:underline">7. Conclusion</a></li>
+                    </ul>
+                </div>
+
+                <!-- Article Content -->
+                <div class="prose prose-lg max-w-none">
+                    <section id="introduction" class="mb-12">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Introduction to AI in Web Development</h2>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Artificial Intelligence is transforming the web development landscape at an unprecedented pace. In 2025, AI-powered tools are not just assisting developers—they're fundamentally changing how we approach coding, testing, and user experience design. From automated code generation to intelligent bug detection, AI is making web development faster, more efficient, and accessible to developers of all skill levels.
+                        </p>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            According to recent industry reports, over 87% of developers are now using AI tools in their daily workflow, with productivity increases of up to 40%. This comprehensive guide will explore how you can leverage AI to enhance your web development process and stay ahead in the competitive tech landscape.
+                        </p>
+                    </section>
+
+                    <section id="ai-coding-tools" class="mb-12">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Top AI Coding Tools Revolutionizing Development in 2025</h2>
+                        
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">1. GitHub Copilot X</h3>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            GitHub Copilot X has evolved significantly, now offering contextual code suggestions, entire function generation, and even documentation writing. It integrates seamlessly with popular IDEs and supports over 30 programming languages.
+                        </p>
+
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">2. OpenAI Codex Integration</h3>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Direct integration with OpenAI's Codex allows developers to write natural language descriptions and receive production-ready code. This tool is particularly effective for complex algorithms and data structures.
+                        </p>
+
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">3. TabNine AI</h3>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            TabNine's advanced AI model provides intelligent autocomplete suggestions based on your coding patterns and project context, reducing development time by up to 30%.
+                        </p>
+                    </section>
+
+                    <section id="automated-testing" class="mb-12">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">AI-Powered Automated Testing: The Future of Quality Assurance</h2>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Traditional testing methods are being revolutionized by AI. Machine learning algorithms can now predict potential bugs, generate comprehensive test cases, and even perform visual regression testing automatically.
+                        </p>
+                        
+                        <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6">
+                            <h4 class="text-lg font-semibold text-blue-900 mb-2">Key Benefits of AI Testing:</h4>
+                            <ul class="list-disc list-inside text-blue-800 space-y-1">
+                                <li>95% reduction in manual testing time</li>
+                                <li>Early bug detection and prevention</li>
+                                <li>Comprehensive coverage analysis</li>
+                                <li>Intelligent test case generation</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="ux-optimization" class="mb-12">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Intelligent UX Optimization Through Machine Learning</h2>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            AI is transforming user experience design by analyzing user behavior patterns, predicting user preferences, and automatically optimizing interfaces for better engagement and conversion rates.
+                        </p>
+                        
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Personalization at Scale</h3>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Modern AI algorithms can create personalized experiences for each user by analyzing their interaction patterns, device preferences, and behavioral data. This results in higher engagement rates and improved user satisfaction.
+                        </p>
+
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">A/B Testing Automation</h3>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            AI-powered A/B testing tools can automatically generate test variants, analyze results, and implement winning designs without manual intervention, leading to continuous optimization.
+                        </p>
+                    </section>
+
+                    <section id="performance" class="mb-12">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">AI for Performance Optimization</h2>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Performance optimization is crucial for user experience and SEO rankings. AI tools can automatically analyze your website's performance metrics and suggest improvements for faster loading times and better Core Web Vitals scores.
+                        </p>
+                        
+                        <div class="bg-green-50 border-l-4 border-green-500 p-6 mb-6">
+                            <h4 class="text-lg font-semibold text-green-900 mb-2">Performance Improvements with AI:</h4>
+                            <ul class="list-disc list-inside text-green-800 space-y-1">
+                                <li>Automated image optimization and compression</li>
+                                <li>Intelligent caching strategies</li>
+                                <li>Code splitting and lazy loading recommendations</li>
+                                <li>Database query optimization</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="future-trends" class="mb-12">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Future Trends and Predictions for 2025 and Beyond</h2>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            The future of AI in web development looks incredibly promising. We're moving towards a world where AI will handle routine coding tasks, allowing developers to focus on creative problem-solving and innovation.
+                        </p>
+
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Emerging Trends to Watch:</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                            <li>No-code/Low-code platforms powered by AI</li>
+                            <li>Natural language programming interfaces</li>
+                            <li>AI-driven security vulnerability detection</li>
+                            <li>Automated accessibility compliance</li>
+                            <li>Intelligent API integration and management</li>
+                        </ul>
+                    </section>
+
+                    <section id="conclusion" class="mb-12">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Conclusion: Embracing AI in Your Development Workflow</h2>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            AI is not replacing developers—it's empowering them to build better, faster, and more innovative web applications. By embracing these AI-powered tools and techniques, you can significantly improve your productivity, code quality, and user experience.
+                        </p>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            Start by integrating one or two AI tools into your workflow, experiment with automated testing, and gradually expand your use of AI-powered development practices. The future of web development is here, and it's powered by artificial intelligence.
+                        </p>
+                    </section>
+
+                    <!-- Call to Action -->
+                    <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 text-white text-center mb-12">
+                        <h3 class="text-2xl font-bold mb-4">Ready to Transform Your Development Workflow?</h3>
+                        <p class="mb-6">Join thousands of developers who are already leveraging AI to build better web applications.</p>
+                        <button class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+                            Get Started Today
+                        </button>
+                    </div>
+
+                    <!-- Author Bio -->
+                    <div class="bg-gray-100 rounded-lg p-6 mb-12">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mr-4"></div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900">Mohit Koli</h4>
+                                <p class="text-gray-600">Senior Full Stack Developer & AI Enthusiast</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">
+                            Mohit is a passionate full-stack developer with over 3 years of experience in web development and artificial intelligence. He specializes in modern JavaScript frameworks, AI integration, and performance optimization. When not coding, he enjoys sharing knowledge through technical blogs and mentoring junior developers.
+                        </p>
+                    </div>
+
+                    <!-- Related Articles -->
+                    <div class="mb-12">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Related Articles</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2 hover:text-blue-600 cursor-pointer">
+                                    Machine Learning for Frontend Developers: A Complete Guide
+                                </h4>
+                                <p class="text-gray-600 text-sm mb-2">January 10, 2025 • 8 min read</p>
+                                <p class="text-gray-600">Learn how to integrate machine learning models into your frontend applications...</p>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2 hover:text-blue-600 cursor-pointer">
+                                    The Future of No-Code Development with AI
+                                </h4>
+                                <p class="text-gray-600 text-sm mb-2">January 8, 2025 • 6 min read</p>
+                                <p class="text-gray-600">Explore how AI is making web development accessible to everyone...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sidebar -->
+            <aside class="lg:col-span-1 mt-12 lg:mt-0">
+                <!-- Search -->
+                <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Search</h3>
+                    <div class="relative">
+                        <input type="text" placeholder="Search articles..." 
+                               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
+                            <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categories -->
+                <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Popular Topics</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-blue-600 flex justify-between"><span>Artificial Intelligence</span><span class="text-sm text-gray-400">25</span></a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-blue-600 flex justify-between"><span>Web Development</span><span class="text-sm text-gray-400">18</span></a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-blue-600 flex justify-between"><span>JavaScript</span><span class="text-sm text-gray-400">32</span></a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-blue-600 flex justify-between"><span>Machine Learning</span><span class="text-sm text-gray-400">15</span></a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-blue-600 flex justify-between"><span>Performance</span><span class="text-sm text-gray-400">12</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Popular Posts -->
+                <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Trending Articles</h3>
+                    <div class="space-y-4">
+                        <div class="flex">
+                            <div class="w-16 h-16 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg mr-3 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="text-sm font-medium text-gray-900 hover:text-blue-600 cursor-pointer mb-1">
+                                    ChatGPT for Developers: 50 Prompts That Will Change Your Workflow
+                                </h4>
+                                <p class="text-xs text-gray-500">January 12, 2025</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-500 rounded-lg mr-3 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="text-sm font-medium text-gray-900 hover:text-blue-600 cursor-pointer mb-1">
+                                    Building Responsive AI Chat Interfaces
+                                </h4>
+                                <p class="text-xs text-gray-500">January 9, 2025</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="w-16 h-16 bg-gradient-to-r from-yellow-400 to-red-500 rounded-lg mr-3 flex-shrink-0"></div>
+                            <div>
+                                <h4 class="text-sm font-medium text-gray-900 hover:text-blue-600 cursor-pointer mb-1">
+                                    AI-Powered Code Review Tools Comparison
+                                </h4>
+                                <p class="text-xs text-gray-500">January 5, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-6 text-white mb-8">
+                    <h3 class="text-lg font-bold mb-2">Stay Updated</h3>
+                    <p class="text-blue-100 text-sm mb-4">Get weekly AI and web development insights delivered to your inbox</p>
+                    <div class="space-y-3">
+                        <input type="email" placeholder="Enter your email" 
+                               class="w-full px-3 py-2 text-gray-900 rounded-lg focus:ring-2 focus:ring-white">
+                        <button class="w-full bg-white text-blue-600 py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors">
+                            Subscribe Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Social Share -->
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Share This Article</h3>
+                    <div class="flex space-x-3">
+                        <button class="bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </button>
+                        <button class="bg-blue-800 text-white p-2 rounded-lg hover:bg-blue-900 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </button>
+                        <button class="bg-green-600 text-white p-2 rounded-lg hover:bg-green-700 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+   <!-- Footer -->
+   <footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <div class="text-2xl font-bold text-blue-400 mb-4">TechBlog</div>
+                <p class="text-gray-400 text-sm">
+                    Your go-to source for the latest in technology, AI development tutorials, and industry insights that help developers stay ahead.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Popular Categories</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Artificial Intelligence</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Web Development</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Machine Learning</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">JavaScript</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="../#about" class="text-gray-400 hover:text-white">About</a></li>
+                    <li><a href="../#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    <li><a href="/privacy" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                    <li><a href="/terms" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                <div class="flex space-x-4">
+                  <a href="https://www.instagram.com/mohit12162/" class="text-gray-400 hover:text-white">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.75-.88a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0z"/>
+                    </svg>
+                  </a>
+                  
+                    <a href="https://x.com/mohitko86979490" class="text-gray-400 hover:text-white">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohit-koli-b47260213/" class="text-gray-400 hover:text-white">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/mohit16161600" class="text-gray-400 hover:text-white" aria-label="Follow on GitHub">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">&copy; 2025 TechBlog by Mohit Koli. All rights reserved.</p>
+                <div class="mt-4 md:mt-0">
+                    <p class="text-xs text-gray-500">Last updated: January 15, 2025</p>
+                </div>
+            </div>
+        </div>
     </div>
-  </header>
+</footer>
 
-  <!-- Blog Hero -->
-  <section class="blog-hero">
-    <div class="container">
-      <h1>Top 5 Tips to Write Clean Code</h1>
-      <p class="subtitle">📅 August 20, 2025 | #Coding #WebDevelopment</p>
-    </div>
-  </section>
+<!-- Back to Top Button -->
+<button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" 
+        class="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors z-50"
+        aria-label="Back to top">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+</button>
 
-  <!-- Blog Content -->
-  <section class="section">
-    <div class="container">
-      <article class="blog-content-article">
-        <p>Writing clean code is an essential skill for every developer. It makes your code easier to read, maintain, and scale. Here are my top 5 tips to help you write clean and professional code:</p>
-        
-        <h2>1. Use Meaningful Variable and Function Names</h2>
-        <p>Names should describe exactly what the variable, function, or class represents. Avoid generic names like x, y, temp. Instead, use descriptive names like <code>userAge</code> or <code>calculateInvoiceTotal()</code>.</p>
-        
-        <h2>2. Keep Functions Small and Focused</h2>
-        <p>Each function should do one thing and do it well. If a function is too long or doing multiple things, break it down into smaller helper functions.</p>
-        
-        <h2>3. Follow Consistent Formatting</h2>
-        <p>Indentation, spacing, and bracket placement should be consistent throughout your project. Using a linter or code formatter like Prettier can help maintain consistency.</p>
-        
-        <h2>4. Comment Wisely</h2>
-        <p>Comments should explain why something is done, not what is being done. Well-written code often speaks for itself; avoid obvious comments.</p>
-        
-        <h2>5. Avoid Code Duplication</h2>
-        <p>If you notice repeating code, extract it into a reusable function or module. This reduces bugs and makes maintenance easier.</p>
-        
-        <p>By following these tips, your code will be cleaner, more readable, and professional. Always remember: clean code is maintainable code!</p>
-
-        <a href="../blog.html" class="btn-back">← Back to Blog</a>
-      </article>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 Mohit Koli. All rights reserved.</p>
-    </div>
-  </footer>
-
+<!-- Google Analytics (Replace with your tracking ID) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_TRACKING_ID');
+</script>
 </body>
 </html>
