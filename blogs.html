@@ -205,72 +205,7 @@
                     </div>
                 </article>
 
-                <!-- Regular Posts -->
-                <div class="space-y-6">
-                    <article class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
-                        <div class="flex items-center text-sm text-gray-500 mb-2">
-                            <span>March 12, 2024</span>
-                            <span class="mx-2">•</span>
-                            <span>3 min read</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-3 hover:text-blue-600 cursor-pointer">
-                            10 Essential CSS Grid Techniques Every Developer Should Know
-                        </h3>
-                        <p class="text-gray-600 mb-4">
-                            Master CSS Grid with these practical techniques that will transform your layout capabilities and streamline your development process.
-                        </p>
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center">
-                                <div class="w-8 h-8 bg-gray-300 rounded-full mr-2"></div>
-                                <span class="text-sm text-gray-700">Sarah Wilson</span>
-                            </div>
-                            <button class="text-blue-600 hover:text-blue-800 text-sm font-medium">Read More →</button>
-                        </div>
-                    </article>
-
-                    <article class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
-                        <div class="flex items-center text-sm text-gray-500 mb-2">
-                            <span>March 10, 2024</span>
-                            <span class="mx-2">•</span>
-                            <span>7 min read</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-3 hover:text-blue-600 cursor-pointer">
-                            React vs Vue vs Angular: A Comprehensive Comparison for 2024
-                        </h3>
-                        <p class="text-gray-600 mb-4">
-                            Compare the three leading JavaScript frameworks and discover which one is the best fit for your next project.
-                        </p>
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center">
-                                <div class="w-8 h-8 bg-gray-300 rounded-full mr-2"></div>
-                                <span class="text-sm text-gray-700">Mike Johnson</span>
-                            </div>
-                            <button class="text-blue-600 hover:text-blue-800 text-sm font-medium">Read More →</button>
-                        </div>
-                    </article>
-
-                    <article class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
-                        <div class="flex items-center text-sm text-gray-500 mb-2">
-                            <span>March 8, 2024</span>
-                            <span class="mx-2">•</span>
-                            <span>4 min read</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-3 hover:text-blue-600 cursor-pointer">
-                            Building Responsive Designs with Tailwind CSS
-                        </h3>
-                        <p class="text-gray-600 mb-4">
-                            Learn how to create beautiful, responsive designs using Tailwind CSS utility classes and best practices.
-                        </p>
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center">
-                                <div class="w-8 h-8 bg-gray-300 rounded-full mr-2"></div>
-                                <span class="text-sm text-gray-700">Emily Chen</span>
-                            </div>
-                            <button class="text-blue-600 hover:text-blue-800 text-sm font-medium">Read More →</button>
-                        </div>
-                    </article>
-                </div>
-
+                
                 <!-- Load More Button -->
                 <div class="text-center mt-12">
                     <button class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium">
@@ -310,35 +245,7 @@
                 <!-- Popular Posts -->
                 <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
                     <h3 class="text-lg font-bold text-gray-900 mb-4">Popular Posts</h3>
-                    <div class="space-y-4">
-                        <div class="flex">
-                            <div class="w-16 h-16 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg mr-3 flex-shrink-0"></div>
-                            <div>
-                                <h4 class="text-sm font-medium text-gray-900 hover:text-blue-600 cursor-pointer mb-1">
-                                    Complete Guide to Modern JavaScript
-                                </h4>
-                                <p class="text-xs text-gray-500">March 5, 2024</p>
-                            </div>
-                        </div>
-                        <div class="flex">
-                            <div class="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-500 rounded-lg mr-3 flex-shrink-0"></div>
-                            <div>
-                                <h4 class="text-sm font-medium text-gray-900 hover:text-blue-600 cursor-pointer mb-1">
-                                    CSS Animation Techniques
-                                </h4>
-                                <p class="text-xs text-gray-500">March 3, 2024</p>
-                            </div>
-                        </div>
-                        <div class="flex">
-                            <div class="w-16 h-16 bg-gradient-to-r from-yellow-400 to-red-500 rounded-lg mr-3 flex-shrink-0"></div>
-                            <div>
-                                <h4 class="text-sm font-medium text-gray-900 hover:text-blue-600 cursor-pointer mb-1">
-                                    Web Performance Optimization
-                                </h4>
-                                <p class="text-xs text-gray-500">March 1, 2024</p>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="popular-posts" class="space-y-4"></div>
                 </div>
 
                 <!-- Newsletter -->
@@ -417,5 +324,9 @@
             </div>
         </div>
     </footer>
+    
+    <!-- Posts registry and shared dynamic sidebar rendering -->
+    <script src="blogs/posts.js"></script>
+    <script src="blogs/sidebar-popular.js"></script>
 </body>
 </html>

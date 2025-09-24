@@ -402,7 +402,7 @@
                     <!-- Author Bio -->
                     <div class="bg-gray-100 rounded-lg p-6 mb-12">
                         <div class="flex items-center mb-4">
-                            <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mr-4"></div>
+                                <img src="../assets/mohit koli.jpeg" alt="Mohit Koli" class="w-16 h-16 rounded-full mr-4 object-cover">
                             <div>
                                 <h4 class="text-xl font-bold text-gray-900">Mohit Koli</h4>
                                 <p class="text-gray-600">Senior Full Stack Developer & AI Advocate</p>
@@ -464,38 +464,10 @@
                     </ul>
                 </div>
 
-                <!-- Popular Posts -->
+                <!-- Popular/Trending Posts (dynamic) -->
                 <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
                     <h3 class="text-lg font-bold text-gray-900 mb-4">Trending Articles</h3>
-                    <div class="space-y-4">
-                        <div class="flex">
-                            <div class="w-16 h-16 bg-gradient-to-r from-red-400 to-orange-500 rounded-lg mr-3 flex-shrink-0"></div>
-                            <div>
-                                <h4 class="text-sm font-medium text-gray-900 hover:text-blue-600 cursor-pointer mb-1">
-                                    The Hidden Costs of AI Code Generation in Enterprise
-                                </h4>
-                                <p class="text-xs text-gray-500">January 19, 2025</p>
-                            </div>
-                        </div>
-                        <div class="flex">
-                            <div class="w-16 h-16 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-lg mr-3 flex-shrink-0"></div>
-                            <div>
-                                <h4 class="text-sm font-medium text-gray-900 hover:text-blue-600 cursor-pointer mb-1">
-                                    Junior Developers vs AI: A Skill Development Crisis
-                                </h4>
-                                <p class="text-xs text-gray-500">January 17, 2025</p>
-                            </div>
-                        </div>
-                        <div class="flex">
-                            <div class="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-500 rounded-lg mr-3 flex-shrink-0"></div>
-                            <div>
-                                <h4 class="text-sm font-medium text-gray-900 hover:text-blue-600 cursor-pointer mb-1">
-                                    How to Code Review AI-Generated Code Effectively
-                                </h4>
-                                <p class="text-xs text-gray-500">January 15, 2025</p>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="popular-posts" class="space-y-4"></div>
                 </div>
 
                 <!-- Newsletter -->
@@ -610,6 +582,10 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
     </svg>
 </button>
+
+<!-- Shared posts registry and dynamic sidebar renderer -->
+<script src="posts.js"></script>
+<script src="sidebar-popular.js"></script>
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
