@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PXM7B4P9DW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-PXM7B4P9DW');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXM7B4P9DW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-PXM7B4P9DW');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -19,15 +20,15 @@
     <meta name="keywords" content="AI web development, artificial intelligence coding, AI tools 2025, automated web development, machine learning frontend, AI UX optimization">
     <meta name="author" content="Mohit Koli">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="#">
+    <link rel="canonical" href="YOUR_CANONICAL_URL_HERE">
     
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Complete Guide to AI in Web Development 2025">
     <meta property="og:description" content="Discover how AI is revolutionizing web development in 2025. Learn about AI-powered coding tools, automated testing, and intelligent UX optimization.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="#">
+    <meta property="og:url" content="YOUR_ARTICLE_URL_HERE">
     <meta property="og:image" content="https://techblog.com/images/ai-web-development-2025.jpg">
-    <meta property="og:site_name" content="Blog">
+    <meta property="og:site_name" content="TechBlog by Mohit Koli">
     
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
@@ -35,7 +36,7 @@
     <meta name="twitter:description" content="Discover how AI is revolutionizing web development in 2025. Learn about AI-powered coding tools and best practices.">
     <meta name="twitter:image" content="https://techblog.com/images/ai-web-development-2025.jpg">
     
-    <!-- Schema.org JSON-LD -->
+    <!-- Schema.org JSON-LD for BlogPosting -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -54,10 +55,43 @@
           "url": "https://techblog.com/logo.png"
         }
       },
-      "datePublished": "2025-01-15",
-      "dateModified": "2025-01-15",
+      "datePublished": "2025-09-24",
+      "dateModified": "2025-09-24",
       "image": "https://techblog.com/images/ai-web-development-2025.jpg",
-      "url": "#"
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "YOUR_ARTICLE_URL_HERE"
+      }
+    }
+    </script>
+
+    <!-- Schema.org JSON-LD for FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Is AI going to replace web developers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, AI is not expected to replace web developers. Instead, it is becoming a powerful assistant that handles repetitive tasks, allowing developers to focus on creative problem-solving, complex architecture, and user experience strategy. AI empowers developers to be more productive and innovative."
+        }
+      },{
+        "@type": "Question",
+        "name": "What are the best AI tools for a beginner web developer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For beginners, GitHub Copilot X is an excellent starting point due to its seamless IDE integration and intuitive code suggestions. Visual Studio Code's built-in IntelliSense and AI-powered extensions are also highly beneficial for learning and productivity."
+        }
+      },{
+        "@type": "Question",
+        "name": "How does AI improve website performance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI improves website performance by automating tasks like image compression, suggesting intelligent caching strategies, recommending code-splitting for faster load times, and optimizing database queries. These actions lead to better Core Web Vitals scores and an improved user experience."
+        }
+      }]
     }
     </script>
     
@@ -65,7 +99,7 @@
 </head>
 <body class="bg-gray-50 font-sans">
     <!-- Header -->
-    <header id="header-main" class="bg-white shadow sticky top-0 z-999">
+    <header id="header-main" class="bg-white shadow sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
           <h1 class="text-xl font-bold text-blue-900">Mohit Koli</h1>
     
@@ -82,13 +116,7 @@
           </nav>
     
           <!-- Mobile Hamburger -->
-          <button
-            id="menu-btn"
-            class="md:hidden flex flex-col space-y-1.5 focus:outline-none"
-            aria-controls="mobile-drawer"
-            aria-expanded="false"
-            aria-label="Open menu"
-          >
+          <button id="menu-btn" class="md:hidden flex flex-col space-y-1.5 focus:outline-none" aria-controls="mobile-drawer" aria-expanded="false" aria-label="Open menu">
             <span class="w-6 h-0.5 bg-gray-800"></span>
             <span class="w-6 h-0.5 bg-gray-800"></span>
             <span class="w-6 h-0.5 bg-gray-800"></span>
@@ -97,25 +125,15 @@
       </header>
     
       <!-- Overlay -->
-      <div
-        id="overlay"
-        class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out z-40"
-      ></div>
+      <div id="overlay" class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out z-40"></div>
     
       <!-- Right Drawer -->
-      <nav
-        id="mobile-drawer"
-        class="fixed right-0 top-0 h-full w-72 max-w-[85vw] bg-white shadow-lg z-50 translate-x-full transition-transform duration-300 ease-in-out md:hidden"
-        aria-labelledby="menu-btn"
-      >
+      <nav id="mobile-drawer" class="fixed right-0 top-0 h-full w-72 max-w-[85vw] bg-white shadow-lg z-50 translate-x-full transition-transform duration-300 ease-in-out md:hidden" aria-labelledby="menu-btn">
         <div class="px-6 py-4 flex items-center justify-between border-b">
           <span class="text-base font-semibold">Menu</span>
           <button id="close-btn" class="p-2 rounded hover:bg-gray-100" aria-label="Close menu">
-            <!-- simple X icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-                 viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                    d="M6 18L18 6M6 6l12 12"/>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/>
             </svg>
           </button>
         </div>
@@ -134,7 +152,7 @@
         const closeBtn = document.getElementById('close-btn');
         const drawer = document.getElementById('mobile-drawer');
         const overlay = document.getElementById('overlay');
-        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link')
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
     
         function openDrawer() {
           drawer.classList.remove('translate-x-full');
@@ -158,14 +176,12 @@
     
         mobileMenuLinks.forEach(link => {
           link.addEventListener('click', (e) => {
-            // Small delay to allow smooth navigation before closing
             setTimeout(() => {
               closeDrawer();
             }, 100);
           });
         });
     
-        // Close on Escape
         document.addEventListener('keydown', (e) => {
           if (e.key === 'Escape') closeDrawer();
         });
@@ -196,7 +212,7 @@
                     <div class="flex items-center justify-between mb-6 text-sm text-gray-600">
                         <div class="flex items-center space-x-4">
                             <div class="flex items-center">
-                                <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mr-3"></div>
+                                <img src="../assets/mohit koli.jpeg" alt="Mohit Koli" class="w-10 h-10 rounded-full mr-3 object-cover">
                                 <div>
                                     <p class="font-medium text-gray-900">Mohit Koli</p>
                                     <p class="text-gray-500">Senior Full Stack Developer</p>
@@ -204,13 +220,12 @@
                             </div>
                         </div>
                         <div class="text-right">
-                            <p>January 15, 2025</p>
+                            <p>September 24, 2025</p>
                             <p>12 min read</p>
                         </div>
                     </div>
                     
-                    <!-- <div class="h-64 md:h-96 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg mb-8"></div> -->
-                    <img src="../assets/b1.png" alt="blog image" class="rounded-lg">
+                    <img src="../assets/b1.png" alt="AI transforming web development with code and graphics" class="rounded-lg w-full h-auto object-cover">
                 </header>
 
                 <!-- Table of Contents -->
@@ -223,11 +238,12 @@
                         <li><a href="#ux-optimization" class="hover:underline">4. Intelligent UX Optimization</a></li>
                         <li><a href="#performance" class="hover:underline">5. AI for Performance Optimization</a></li>
                         <li><a href="#future-trends" class="hover:underline">6. Future Trends and Predictions</a></li>
-                        <li><a href="#conclusion" class="hover:underline">7. Conclusion</a></li>
+                        <li><a href="#faq" class="hover:underline">7. Frequently Asked Questions (FAQ)</a></li>
+                        <li><a href="#conclusion" class="hover:underline">8. Conclusion</a></li>
                     </ul>
                 </div>
 
-                <!-- Article Content -->
+                <!-- Article Body -->
                 <div class="prose prose-lg max-w-none">
                     <section id="introduction" class="mb-12">
                         <h2 class="text-3xl font-bold text-gray-900 mb-6">Introduction to AI in Web Development</h2>
@@ -252,9 +268,9 @@
                             Direct integration with OpenAI's Codex allows developers to write natural language descriptions and receive production-ready code. This tool is particularly effective for complex algorithms and data structures.
                         </p>
 
-                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">3. TabNine AI</h3>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">3. Tabnine AI</h3>
                         <p class="text-gray-700 mb-6 leading-relaxed">
-                            TabNine's advanced AI model provides intelligent autocomplete suggestions based on your coding patterns and project context, reducing development time by up to 30%.
+                            Tabnine's advanced AI model provides intelligent autocomplete suggestions based on your coding patterns and project context, reducing development time by up to 30%.
                         </p>
                     </section>
 
@@ -267,10 +283,10 @@
                         <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6">
                             <h4 class="text-lg font-semibold text-blue-900 mb-2">Key Benefits of AI Testing:</h4>
                             <ul class="list-disc list-inside text-blue-800 space-y-1">
-                                <li>95% reduction in manual testing time</li>
+                                <li>Up to 95% reduction in manual testing time</li>
                                 <li>Early bug detection and prevention</li>
-                                <li>Comprehensive coverage analysis</li>
-                                <li>Intelligent test case generation</li>
+                                <li>Comprehensive test coverage analysis</li>
+                                <li>Intelligent, self-healing test case generation</li>
                             </ul>
                         </div>
                     </section>
@@ -288,7 +304,7 @@
 
                         <h3 class="text-2xl font-semibold text-gray-900 mb-4">A/B Testing Automation</h3>
                         <p class="text-gray-700 mb-6 leading-relaxed">
-                            AI-powered A/B testing tools can automatically generate test variants, analyze results, and implement winning designs without manual intervention, leading to continuous optimization.
+                            AI-powered A/B testing tools can automatically generate test variants, analyze results in real-time, and implement winning designs without manual intervention, leading to continuous optimization.
                         </p>
                     </section>
 
@@ -302,9 +318,9 @@
                             <h4 class="text-lg font-semibold text-green-900 mb-2">Performance Improvements with AI:</h4>
                             <ul class="list-disc list-inside text-green-800 space-y-1">
                                 <li>Automated image optimization and compression</li>
-                                <li>Intelligent caching strategies</li>
+                                <li>Intelligent caching and prefetching strategies</li>
                                 <li>Code splitting and lazy loading recommendations</li>
-                                <li>Database query optimization</li>
+                                <li> Predictive database query optimization</li>
                             </ul>
                         </div>
                     </section>
@@ -317,12 +333,30 @@
 
                         <h3 class="text-2xl font-semibold text-gray-900 mb-4">Emerging Trends to Watch:</h3>
                         <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
-                            <li>No-code/Low-code platforms powered by AI</li>
-                            <li>Natural language programming interfaces</li>
-                            <li>AI-driven security vulnerability detection</li>
-                            <li>Automated accessibility compliance</li>
-                            <li>Intelligent API integration and management</li>
+                            <li>AI-powered no-code/low-code platforms</li>
+                            <li>Natural Language Programming (NLP) interfaces</li>
+                            <li>AI-driven real-time security vulnerability detection</li>
+                            <li>Automated accessibility (a11y) compliance and remediation</li>
+                            <li>Intelligent API integration and self-management</li>
                         </ul>
+                    </section>
+                    
+                    <section id="faq" class="mb-12">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions (FAQ)</h2>
+                        <div class="space-y-4">
+                            <div>
+                                <h3 class="font-semibold text-lg">Is AI going to replace web developers?</h3>
+                                <p class="text-gray-600 mt-1">No, AI is not expected to replace web developers. Instead, it is becoming a powerful assistant that handles repetitive tasks, allowing developers to focus on creative problem-solving, complex architecture, and user experience strategy. AI empowers developers to be more productive and innovative.</p>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">What are the best AI tools for a beginner web developer?</h3>
+                                <p class="text-gray-600 mt-1">For beginners, GitHub Copilot X is an excellent starting point due to its seamless IDE integration and intuitive code suggestions. Visual Studio Code's built-in IntelliSense and AI-powered extensions are also highly beneficial for learning and productivity.</p>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">How does AI improve website performance?</h3>
+                                <p class="text-gray-600 mt-1">AI improves website performance by automating tasks like image compression, suggesting intelligent caching strategies, recommending code-splitting for faster load times, and optimizing database queries. These actions lead to better Core Web Vitals scores and an improved user experience.</p>
+                            </div>
+                        </div>
                     </section>
 
                     <section id="conclusion" class="mb-12">
@@ -334,50 +368,6 @@
                             Start by integrating one or two AI tools into your workflow, experiment with automated testing, and gradually expand your use of AI-powered development practices. The future of web development is here, and it's powered by artificial intelligence.
                         </p>
                     </section>
-
-                    <!-- Call to Action -->
-                    <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 text-white text-center mb-12">
-                        <h3 class="text-2xl font-bold mb-4">Ready to Transform Your Development Workflow?</h3>
-                        <p class="mb-6">Join thousands of developers who are already leveraging AI to build better web applications.</p>
-                        <button class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
-                            Get Started Today
-                        </button>
-                    </div>
-
-                    <!-- Author Bio -->
-                    <div class="bg-gray-100 rounded-lg p-6 mb-12">
-                        <div class="flex items-center mb-4">
-                            <img src="../assets/mohit koli.jpeg" alt="Mohit Koli" class="w-16 h-16 rounded-full mr-4 object-cover">
-                            <div>
-                                <h4 class="text-xl font-bold text-gray-900">Mohit Koli</h4>
-                                <p class="text-gray-600">Senior Full Stack Developer & AI Enthusiast</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-700">
-                            Mohit is a passionate full-stack developer with over 3 years of experience in web development and artificial intelligence. He specializes in modern JavaScript frameworks, AI integration, and performance optimization. When not coding, he enjoys sharing knowledge through technical blogs and mentoring junior developers.
-                        </p>
-                    </div>
-
-                    <!-- Related Articles -->
-                    <div class="mb-12">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Related Articles</h3>
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
-                                <h4 class="text-lg font-semibold text-gray-900 mb-2 hover:text-blue-600 cursor-pointer">
-                                    Machine Learning for Frontend Developers: A Complete Guide
-                                </h4>
-                                <p class="text-gray-600 text-sm mb-2">January 10, 2025 • 8 min read</p>
-                                <p class="text-gray-600">Learn how to integrate machine learning models into your frontend applications...</p>
-                            </div>
-                            <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
-                                <h4 class="text-lg font-semibold text-gray-900 mb-2 hover:text-blue-600 cursor-pointer">
-                                    The Future of No-Code Development with AI
-                                </h4>
-                                <p class="text-gray-600 text-sm mb-2">January 8, 2025 • 6 min read</p>
-                                <p class="text-gray-600">Explore how AI is making web development accessible to everyone...</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </article>
 
@@ -387,9 +377,8 @@
                 <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
                     <h3 class="text-lg font-bold text-gray-900 mb-4">Search</h3>
                     <div class="relative">
-                        <input type="text" placeholder="Search articles..." 
-                               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                        <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
+                        <input type="text" placeholder="Search articles..." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
                             <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                             </svg>
@@ -420,8 +409,7 @@
                     <h3 class="text-lg font-bold mb-2">Stay Updated</h3>
                     <p class="text-blue-100 text-sm mb-4">Get weekly AI and web development insights delivered to your inbox</p>
                     <div class="space-y-3">
-                        <input type="email" placeholder="Enter your email" 
-                               class="w-full px-3 py-2 text-gray-900 rounded-lg focus:ring-2 focus:ring-white">
+                        <input type="email" placeholder="Enter your email" class="w-full px-3 py-2 text-gray-900 rounded-lg focus:ring-2 focus:ring-white">
                         <button class="w-full bg-white text-blue-600 py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors">
                             Subscribe Now
                         </button>
@@ -433,19 +421,13 @@
                     <h3 class="text-lg font-bold text-gray-900 mb-4">Share This Article</h3>
                     <div class="flex space-x-3">
                         <button class="bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700 transition-colors">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
                         </button>
                         <button class="bg-blue-800 text-white p-2 rounded-lg hover:bg-blue-900 transition-colors">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                         </button>
                         <button class="bg-green-600 text-white p-2 rounded-lg hover:bg-green-700 transition-colors">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24z"/>
-                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24z"/></svg>
                         </button>
                     </div>
                 </div>
@@ -453,92 +435,65 @@
         </div>
     </main>
 
-   <!-- Footer -->
-   <footer class="bg-gray-900 text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-                <div class="text-2xl font-bold text-blue-400 mb-4">TechBlog</div>
-                <p class="text-gray-400 text-sm">
-                    Your go-to source for the latest in technology, AI development tutorials, and industry insights that help developers stay ahead.
-                </p>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold text-blue-400 mb-4">TechBlog</div>
+                    <p class="text-gray-400 text-sm">
+                        Your go-to source for the latest in technology, AI development tutorials, and industry insights that help developers stay ahead.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Popular Categories</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Artificial Intelligence</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Web Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Machine Learning</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">JavaScript</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="../#about" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="../#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                        <li><a href="/privacy" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="/terms" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/mohit12162/" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.75-.88a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0z"/></svg></a>
+                        <a href="https://x.com/mohitko86979490" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg></a>
+                        <a href="https://www.linkedin.com/in/mohit-koli-b47260213/" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                        <a href="https://github.com/mohit16161600" class="text-gray-400 hover:text-white" aria-label="Follow on GitHub"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3 class="text-lg font-semibold mb-4">Popular Categories</h3>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="#" class="text-gray-400 hover:text-white">Artificial Intelligence</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white">Web Development</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white">Machine Learning</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white">JavaScript</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="../#about" class="text-gray-400 hover:text-white">About</a></li>
-                    <li><a href="../#contact" class="text-gray-400 hover:text-white">Contact</a></li>
-                    <li><a href="/privacy" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
-                    <li><a href="/terms" class="text-gray-400 hover:text-white">Terms of Service</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
-                <div class="flex space-x-4">
-                  <a href="https://www.instagram.com/mohit12162/" class="text-gray-400 hover:text-white">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.75-.88a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0z"/>
-                    </svg>
-                  </a>
-                  
-                    <a href="https://x.com/mohitko86979490" class="text-gray-400 hover:text-white">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
-                        </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/mohit-koli-b47260213/" class="text-gray-400 hover:text-white">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/mohit16161600" class="text-gray-400 hover:text-white" aria-label="Follow on GitHub">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </a>
+            <div class="border-t border-gray-800 mt-8 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm">&copy; 2025 TechBlog by Mohit Koli. All rights reserved.</p>
+                    <div class="mt-4 md:mt-0">
+                        <p class="text-xs text-gray-500">Last updated: September 24, 2025</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="border-t border-gray-800 mt-8 pt-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 text-sm">&copy; 2025 TechBlog by Mohit Koli. All rights reserved.</p>
-                <div class="mt-4 md:mt-0">
-                    <p class="text-xs text-gray-500">Last updated: January 15, 2025</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
 
-<!-- Back to Top Button -->
-<button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" 
-        class="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors z-50"
-        aria-label="Back to top">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
-    </svg>
-</button>
+    <!-- Back to Top Button -->
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors z-50" aria-label="Back to top">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
 
-<!-- Shared posts registry and dynamic sidebar renderer -->
-<script src="posts.js"></script>
-<script src="sidebar-popular.js"></script>
+    <!-- Shared posts registry and dynamic sidebar renderer -->
+    <script src="posts.js"></script>
+    <script src="sidebar-popular.js"></script>
 
-<!-- Google Analytics (Replace with your tracking ID) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'GA_TRACKING_ID');
-</script>
 </body>
 </html>
