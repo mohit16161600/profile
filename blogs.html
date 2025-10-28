@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PXM7B4P9DW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXM7B4P9DW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-PXM7B4P9DW');
-</script>
+      gtag('config', 'G-PXM7B4P9DW');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -75,127 +75,140 @@
 </head>
 <body class="bg-gray-50 font-sans">
     <!-- Header -->
-
-
-
-    <header id="header-main" class="bg-white shadow sticky top-0 z-999">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <h1 class="text-xl font-bold text-blue-900">Mohit Koli</h1>
+    <header id="header-main" class="bg-white shadow sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold text-blue-900">Mohit Koli</h1>
     
-          <!-- Desktop Menu -->
-          <nav class="hidden md:block">
-            <ul class="flex space-x-6 text-sm font-medium">
-              <li><a href="./#about" class="hover:text-blue-700">About</a></li>
-              <li><a href="./#qualification" class="hover:text-blue-700">Qualification</a></li>
-              <li><a href="./#work" class="hover:text-blue-700">My Work</a></li>
-              <li><a href="./#experience" class="hover:text-blue-700">Experience</a></li>
-              <li><a href="./#skills" class="hover:text-blue-700">Skills</a></li>
-              <li><a href="./blogs/blogs.html" class="hover:text-blue-700">Blog</a></li>
-            </ul>
-          </nav>
+        <!-- Desktop Menu -->
+        <nav class="hidden md:block">
+          <ul class="flex space-x-6 text-sm font-medium">
+            <li><a href="./#about" class="hover:text-blue-700">About</a></li>
+            <li><a href="./#qualification" class="hover:text-blue-700">Qualification</a></li>
+            <li><a href="./#work" class="hover:text-blue-700">My Work</a></li>
+            <li><a href="./#experience" class="hover:text-blue-700">Experience</a></li>
+            <li><a href="./#skills" class="hover:text-blue-700">Skills</a></li>
+            <li><a href="./blogs.html" class="hover:text-blue-700">Blog</a></li>
+          </ul>
+        </nav>
     
-          <!-- Mobile Hamburger -->
-          <button
-            id="menu-btn"
-            class="md:hidden flex flex-col space-y-1.5 focus:outline-none"
-            aria-controls="mobile-drawer"
-            aria-expanded="false"
-            aria-label="Open menu"
-          >
-            <span class="w-6 h-0.5 bg-gray-800"></span>
-            <span class="w-6 h-0.5 bg-gray-800"></span>
-            <span class="w-6 h-0.5 bg-gray-800"></span>
-          </button>
-        </div>
-      </header>
+        <!-- Mobile Hamburger -->
+        <button
+          id="menu-btn"
+          class="md:hidden flex flex-col space-y-1.5 focus:outline-none"
+          aria-controls="mobile-drawer"
+          aria-expanded="false"
+          aria-label="Open menu"
+        >
+          <span class="w-6 h-0.5 bg-gray-800"></span>
+          <span class="w-6 h-0.5 bg-gray-800"></span>
+          <span class="w-6 h-0.5 bg-gray-800"></span>
+        </button>
+      </div>
+    </header>
     
-      <!-- Overlay -->
-      <div
-        id="overlay"
-        class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out z-40"
-      ></div>
+    <!-- Overlay -->
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out z-40"
+    ></div>
     
-      <!-- Right Drawer -->
-      <nav
-        id="mobile-drawer"
-        class="fixed right-0 top-0 h-full w-72 max-w-[85vw] bg-white shadow-lg z-50 translate-x-full transition-transform duration-300 ease-in-out md:hidden"
-        aria-labelledby="menu-btn"
-      >
-        <div class="px-6 py-4 flex items-center justify-between border-b">
-          <span class="text-base font-semibold">Menu</span>
-          <button id="close-btn" class="p-2 rounded hover:bg-gray-100" aria-label="Close menu">
-            <!-- simple X icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-                 viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                    d="M6 18L18 6M6 6l12 12"/>
-            </svg>
-          </button>
-        </div>
-        <ul class="flex flex-col space-y-3 px-6 py-4 text-sm font-medium" role="menu" aria-label="Mobile navigation">
-          <li><a href="./#about" class="hover:text-blue-700 mobile-menu-link" role="menuitem">About</a></li>
-          <li><a href="./#qualification" class="hover:text-blue-700 mobile-menu-link" role="menuitem">Qualification</a></li>
-          <li><a href="./#work" class="hover:text-blue-700 mobile-menu-link" role="menuitem">My Work</a></li>
-          <li><a href="./#experience" class="hover:text-blue-700 mobile-menu-link" role="menuitem">Experience</a></li>
-          <li><a href="./#skills" class="hover:text-blue-700 mobile-menu-link" role="menuitem">Skills</a></li>
-          <li><a href="./blogs.html" class="hover:text-blue-700 mobile-menu-link" role="menuitem">Blog</a></li>
-        </ul>
-      </nav>
+    <!-- Right Drawer -->
+    <nav
+      id="mobile-drawer"
+      class="fixed right-0 top-0 h-full w-72 max-w-[85vw] bg-white shadow-lg z-50 translate-x-full transition-transform duration-300 ease-in-out md:hidden"
+      aria-labelledby="menu-btn"
+    >
+      <div class="px-6 py-4 flex items-center justify-between border-b">
+        <span class="text-base font-semibold">Menu</span>
+        <button id="close-btn" class="p-2 rounded hover:bg-gray-100" aria-label="Close menu">
+          <!-- simple X icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <ul class="flex flex-col space-y-3 px-6 py-4 text-sm font-medium" role="menu" aria-label="Mobile navigation">
+        <li><a href="./#about" class="hover:text-blue-700 mobile-menu-link" role="menuitem">About</a></li>
+        <li><a href="./#qualification" class="hover:text-blue-700 mobile-menu-link" role="menuitem">Qualification</a></li>
+        <li><a href="./#work" class="hover:text-blue-700 mobile-menu-link" role="menuitem">My Work</a></li>
+        <li><a href="./#experience" class="hover:text-blue-700 mobile-menu-link" role="menuitem">Experience</a></li>
+        <li><a href="./#skills" class="hover:text-blue-700 mobile-menu-link" role="menuitem">Skills</a></li>
+        <li><a href="./blogs.html" class="hover:text-blue-700 mobile-menu-link" role="menuitem">Blog</a></li>
+      </ul>
+    </nav>
     
-      <script>
-        const btn = document.getElementById('menu-btn');
-        const closeBtn = document.getElementById('close-btn');
-        const drawer = document.getElementById('mobile-drawer');
-        const overlay = document.getElementById('overlay');
-        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link')
+    <script>
+      const btn = document.getElementById('menu-btn');
+      const closeBtn = document.getElementById('close-btn');
+      const drawer = document.getElementById('mobile-drawer');
+      const overlay = document.getElementById('overlay');
+      const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link')
     
-        function openDrawer() {
-          drawer.classList.remove('translate-x-full');
-          overlay.classList.remove('pointer-events-none');
-          overlay.classList.add('opacity-100');
-          btn.setAttribute('aria-expanded', 'true');
-          document.body.classList.add('overflow-hidden');
-        }
+      function openDrawer() {
+        drawer.classList.remove('translate-x-full');
+        overlay.classList.remove('pointer-events-none');
+        overlay.classList.add('opacity-100');
+        btn.setAttribute('aria-expanded', 'true');
+        document.body.classList.add('overflow-hidden');
+      }
     
-        function closeDrawer() {
-          drawer.classList.add('translate-x-full');
-          overlay.classList.add('pointer-events-none');
-          overlay.classList.remove('opacity-100');
-          btn.setAttribute('aria-expanded', 'false');
-          document.body.classList.remove('overflow-hidden');
-        }
+      function closeDrawer() {
+        drawer.classList.add('translate-x-full');
+        overlay.classList.add('pointer-events-none');
+        overlay.classList.remove('opacity-100');
+        btn.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('overflow-hidden');
+      }
     
-        btn.addEventListener('click', openDrawer);
-        overlay.addEventListener('click', closeDrawer);
-        closeBtn.addEventListener('click', closeDrawer);
+      btn.addEventListener('click', openDrawer);
+      overlay.addEventListener('click', closeDrawer);
+      closeBtn.addEventListener('click', closeDrawer);
     
-        mobileMenuLinks.forEach(link => {
-          link.addEventListener('click', (e) => {
-            // Small delay to allow smooth navigation before closing
-            setTimeout(() => {
-              closeDrawer();
-            }, 100);
-          });
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          // Small delay to allow smooth navigation before closing
+          setTimeout(() => {
+            closeDrawer();
+          }, 100);
         });
+      });
     
-        // Close on Escape
-        document.addEventListener('keydown', (e) => {
-          if (e.key === 'Escape') closeDrawer();
-        });
-      </script>
+      // Close on Escape
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeDrawer();
+      });
+    </script>
+
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20" aria-label="Blog Hero Section">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="bg-cover bg-center text-white py-20 relative" style="background-image: url('./assets/mohitkolibg.jpg');" aria-label="Blog Hero Section">
+        <!-- Overlay to darken the image -->
+        <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
+    
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">Technology Blog by Mohit Koli</h1>
-                <p class="text-xl md:text-2xl mb-8 text-blue-100">Discover the latest in AI development, web programming, and software engineering insights</p>
-                <button class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors" aria-label="Explore technology articles">
+                <!-- Title - Responsive font size -->
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                    Technology Blog by Mohit Koli
+                </h1>
+    
+                <!-- Description - Responsive font size -->
+                <p class="text-lg sm:text-xl md:text-2xl mb-8 text-blue-100">
+                    Discover the latest in AI development, web programming, and software engineering insights
+                </p>
+    
+                <!-- Button - Responsive padding -->
+                <button class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
                     Explore Articles
                 </button>
             </div>
         </div>
     </section>
+    
+    
+
 
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -204,7 +217,65 @@
             <div class="lg:col-span-2">
                 <h2 class="text-3xl font-bold text-gray-900 mb-8">Latest Technology Articles</h2>
                 
-                <!-- Featured Post -->
+                <!-- NEW POST - Blog 3 -->
+                <article class="bg-white rounded-lg shadow-sm mb-8 overflow-hidden hover:shadow-md transition-shadow" itemscope itemtype="https://schema.org/BlogPosting">
+                    <img src="assets/mohitkolib3.jpg" alt="Top 10 JavaScript Libraries & Frameworks in Demand - Logos of JS frameworks" title="Top 10 JS Frameworks Guide by Mohit Koli" class="w-full h-48 object-cover" itemprop="image">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <time datetime="2025-10-28" itemprop="datePublished">October 28, 2025</time>
+                            <span class="mx-2">•</span>
+                            <span itemprop="timeRequired">15 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 cursor-pointer" itemprop="headline">
+                            <a href="blogs/blog3.html" title="Read The 2025 Developer's Guide: Top 10 JavaScript Libraries & Frameworks">The 2025 Developer's Guide: Top 10 JavaScript Libraries & Frameworks in Demand</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4" itemprop="description">
+                            The JavaScript ecosystem is a dynamic landscape. This guide cuts through the noise to highlight the top 10 JavaScript libraries and frameworks, like React, Next.js, and Svelte, that are shaping the industry in 2025.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div>
+                                    <p class="text-sm font-medium text-gray-900" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                                        <span itemprop="name">Mohit Koli</span>
+                                    </p>
+                                    <p class="text-xs text-gray-500">Senior Full Stack Developer</p>
+                                </div>
+                            </div>
+                            <a href="blogs/blog3.html" class="text-blue-600 hover:text-blue-800 font-medium" title="Read full article about top JS frameworks" itemprop="url">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog 2 -->
+                <article class="bg-white rounded-lg shadow-sm mb-8 overflow-hidden hover:shadow-md transition-shadow" itemscope itemtype="https://schema.org/BlogPosting">
+                    <img src="assets/AiBLog.png" alt="The Uncomfortable Truth About AI Coding - Developer concerns with AI code assistants" title="AI Coding Problems by Mohit Koli" class="w-full h-48 object-cover" itemprop="image">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <time datetime="2025-09-22" itemprop="datePublished">September 22, 2025</time>
+                            <span class="mx-2">•</span>
+                            <span itemprop="timeRequired">8 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 cursor-pointer" itemprop="headline">
+                            <a href="blogs/blog2.html" title="Read The Uncomfortable Truth About AI Coding">The Uncomfortable Truth About AI Coding: Why AI Code Assistants Make You a Worse Developer</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4" itemprop="description">
+                            Recent research from Stack Overflow reveals that 66% of developers find AI-generated code "almost right, but not quite," and 45% spend more time debugging AI code than writing it from scratch. Discover the hidden downsides of over-relying on AI.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div>
+                                    <p class="text-sm font-medium text-gray-900" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                                        <span itemprop="name">Mohit Koli</span>
+                                    </p>
+                                    <p class="text-xs text-gray-500">Senior Full Stack Developer</p>
+                                </div>
+                            </div>
+                            <a href="blogs/blog2.html" class="text-blue-600 hover:text-blue-800 font-medium" title="Read full article about AI coding problems" itemprop="url">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog 1 -->
                 <article class="bg-white rounded-lg shadow-sm mb-8 overflow-hidden hover:shadow-md transition-shadow" itemscope itemtype="https://schema.org/BlogPosting">
                     <img src="assets/b1.png" alt="Complete Guide to AI Development - AI tools transforming web development workflow" title="AI Development Guide by Mohit Koli" class="w-full h-48 object-cover" itemprop="image">
                     <div class="p-6">
@@ -232,35 +303,6 @@
                         </div>
                     </div>
                 </article>
-
-                <article class="bg-white rounded-lg shadow-sm mb-8 overflow-hidden hover:shadow-md transition-shadow" itemscope itemtype="https://schema.org/BlogPosting">
-                    <img src="assets/AiBLog.png" alt="The Uncomfortable Truth About AI Coding - Developer concerns with AI code assistants" title="AI Coding Problems by Mohit Koli" class="w-full h-48 object-cover" itemprop="image">
-                    <div class="p-6">
-                        <div class="flex items-center text-sm text-gray-500 mb-2">
-                            <time datetime="2025-09-22" itemprop="datePublished">September 22, 2025</time>
-                            <span class="mx-2">•</span>
-                            <span itemprop="timeRequired">8 min read</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 cursor-pointer" itemprop="headline">
-                            <a href="blogs/blog2.html" title="Read The Uncomfortable Truth About AI Coding">The Uncomfortable Truth About AI Coding: Why AI Code Assistants Make You a Worse Developer</a>
-                        </h3>
-                        <p class="text-gray-600 mb-4" itemprop="description">
-                            Recent research from Stack Overflow reveals that 66% of developers find AI-generated code "almost right, but not quite," and 45% spend more time debugging AI code than writing it from scratch. Even more concerning, studies show that when experienced developers use AI tools, they actually take 19% longer to complete complex tasks.
-                        </p>
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center">
-                                <div>
-                                    <p class="text-sm font-medium text-gray-900" itemprop="author" itemscope itemtype="https://schema.org/Person">
-                                        <span itemprop="name">Mohit Koli</span>
-                                    </p>
-                                    <p class="text-xs text-gray-500">Senior Full Stack Developer</p>
-                                </div>
-                            </div>
-                            <a href="blogs/blog2.html" class="text-blue-600 hover:text-blue-800 font-medium" title="Read full article about AI coding problems" itemprop="url">Read More →</a>
-                        </div>
-                    </div>
-                </article>
-
                 
                 <!-- Load More Button -->
                 <div class="text-center mt-12">
@@ -269,6 +311,7 @@
                     </button>
                 </div>
             </div>
+
 
             <!-- Sidebar -->
             <div class="lg:col-span-1 mt-12 lg:mt-0">
@@ -287,6 +330,7 @@
                     </div>
                 </div>
 
+
                 <!-- Categories -->
                 <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
                     <h3 class="text-lg font-bold text-gray-900 mb-4">Technology Categories</h3>
@@ -299,11 +343,13 @@
                     </ul>
                 </div>
 
+
                 <!-- Popular Posts -->
                 <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
                     <h3 class="text-lg font-bold text-gray-900 mb-4">Popular Technology Articles</h3>
                     <div id="popular-posts" class="space-y-4"></div>
                 </div>
+
 
                 <!-- Newsletter -->
                 <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-6 text-white">
@@ -321,6 +367,7 @@
             </div>
         </div>
     </main>
+
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white">
@@ -354,9 +401,9 @@
                     <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
                     <div class="flex space-x-4">
                       <a href="https://www.instagram.com/mohit12162/" class="text-gray-400 hover:text-white" title="Follow Mohit Koli on Instagram" aria-label="Follow on Instagram">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.75-.88a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0z"/>
-                        </svg>
+                          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.75-.88a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0z"/>
+                          </svg>
                       </a>
                       
                         <a href="https://x.com/mohitko86979490" class="text-gray-400 hover:text-white" title="Follow Mohit Koli on Twitter/X" aria-label="Follow on Twitter/X">
