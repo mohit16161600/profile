@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.mohitkoli.info/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/mohit-koli-profile-photo.jpg</image:loc>
+      <image:title>Mohit Koli - Professional Web Developer Profile Photo</image:title>
+      <image:caption>Mohit Koli, Professional Web Developer and Full Stack Developer</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.mohitkoli.info/blogs.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.mohitkoli.info/blogs/blog1.html</loc>
+    <lastmod>2025-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/b1.png</image:loc>
+      <image:title>AI in Web Development Guide by Mohit Koli</image:title>
+      <image:caption>Complete Guide to AI in Web Development 2025 by Mohit Koli</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.mohitkoli.info/blogs/blog2.html</loc>
+    <lastmod>2025-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/AiBLog.png</image:loc>
+      <image:title>AI Coding Problems Article by Mohit Koli</image:title>
+      <image:caption>Why AI Code Assistants Make You a Worse Developer by Mohit Koli</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.mohitkoli.info/blogs/blog3.html</loc>
+    <lastmod>2025-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/mohitkolib3.jpg</image:loc>
+      <image:title>Top JavaScript Frameworks Guide by Mohit Koli</image:title>
+      <image:caption>Top 10 JavaScript Libraries and Frameworks in Demand for 2025 by Mohit Koli</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.mohitkoli.info/blogs/blog4.html</loc>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/tech-mohitkoli.png</image:loc>
+      <image:title>Best AI Tools Guide 2025 by Mohit Koli</image:title>
+      <image:caption>Best AI Tools for Students, Developers, and Digital Marketers in 2025 by Mohit Koli</image:caption>
+    </image:image>
+  </url>
+</urlset>
+
