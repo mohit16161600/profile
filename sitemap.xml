@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.mohitkoli.info/</loc>
-    <lastmod>2025-01-27</lastmod>
+    <lastmod>2025-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://www.mohitkoli.info/blogs.html</loc>
-    <lastmod>2025-01-27</lastmod>
+    <lastmod>2025-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -60,6 +60,17 @@
       <image:loc>https://www.mohitkoli.info/assets/tech-mohitkoli.png</image:loc>
       <image:title>Best AI Tools Guide 2025 by Mohit Koli</image:title>
       <image:caption>Best AI Tools for Students, Developers, and Digital Marketers in 2025 by Mohit Koli</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.mohitkoli.info/blogs/blog5.html</loc>
+    <lastmod>2025-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/mohitkoliblog5.png</image:loc>
+      <image:title>Hostinger VPS Review 2025 by Mohit Koli</image:title>
+      <image:caption>Hostinger VPS Hosting Review 2025: Complete Guide & 50% Discount by Mohit Koli</image:caption>
     </image:image>
   </url>
 </urlset>

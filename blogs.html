@@ -25,6 +25,9 @@
     <meta name="language" content="English">
     <meta name="revisit-after" content="7 days">
     <link rel="canonical" href="https://www.mohitkoli.info/blogs.html">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    <meta http-equiv="last-modified" content="2025-11-20">
     
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Mohit Koli - Technology Blog | AI, Web Development & Programming Insights">
@@ -46,6 +49,28 @@
     <meta name="twitter:image:alt" content="Mohit Koli - Technology Blog">
     <meta name="twitter:creator" content="@mohitko86979490">
     
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mohitkoli.info/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://www.mohitkoli.info/blogs.html"
+        }
+      ]
+    }
+    </script>
+
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
@@ -224,6 +249,35 @@
             <div class="lg:col-span-2">
                 <h2 class="text-3xl font-bold text-gray-900 mb-8">Latest Technology Articles</h2>
                 
+                <!-- NEW POST - Blog 5 -->
+                <article class="bg-white rounded-lg shadow-sm mb-8 overflow-hidden hover:shadow-md transition-shadow" itemscope itemtype="https://schema.org/BlogPosting">
+                    <img src="assets/mohitkoliblog5.png" alt="Hostinger VPS Hosting Review 2025: Complete Guide & 50% Discount" title="Hostinger VPS Review 2025 by Mohit Koli" class="w-full h-48 object-cover" itemprop="image">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <time datetime="2025-11-20" itemprop="datePublished">November 20, 2025</time>
+                            <span class="mx-2">•</span>
+                            <span itemprop="timeRequired">20 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 cursor-pointer" itemprop="headline">
+                            <a href="blogs/blog5.html" title="Read Hostinger VPS Hosting Review 2025: Complete Guide & 50% Discount">Hostinger VPS Hosting Review 2025: Complete Guide & 50% Discount</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4" itemprop="description">
+                            Comprehensive Hostinger KVM VPS hosting review 2025 by Mohit Koli. Get exclusive 50% discount, performance analysis, and complete guide to Hostinger VPS plans with NVMe SSD storage.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div>
+                                    <p class="text-sm font-medium text-gray-900" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                                        <span itemprop="name">Mohit Koli</span>
+                                    </p>
+                                    <p class="text-xs text-gray-500">Senior Full Stack Developer</p>
+                                </div>
+                            </div>
+                            <a href="blogs/blog5.html" class="text-blue-600 hover:text-blue-800 font-medium" title="Read full article about Hostinger VPS hosting review" itemprop="url">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
                 <!-- NEW POST - Blog 4 -->
                 <article class="bg-white rounded-lg shadow-sm mb-8 overflow-hidden hover:shadow-md transition-shadow" itemscope itemtype="https://schema.org/BlogPosting">
                     <img src="assets/tech-mohitkoli.png" alt="Best AI Tools for Students, Developers, and Digital Marketers 2025" title="Best AI Tools Guide 2025 by Mohit Koli" class="w-full h-48 object-cover" itemprop="image">

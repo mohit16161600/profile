@@ -1,0 +1,18 @@
+/* TEAM */
+Developer: Mohit Koli
+Site: https://www.mohitkoli.info
+Email: contact@mohitkoli.info
+Twitter: @mohitko86979490
+Location: India
+
+/* THANKS */
+Tailwind CSS: https://tailwindcss.com
+Google Analytics: https://analytics.google.com
+
+/* SITE */
+Last update: 2025/11/20
+Standards: HTML5, CSS3, JavaScript ES6+
+Components: React, PHP, Laravel, Node.js
+Software: VS Code, Git, XAMPP
+Language: English
+
