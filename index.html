@@ -5,7 +5,9 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXM7B4P9DW"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
     gtag('config', 'G-PXM7B4P9DW');
   </script>
@@ -700,7 +702,7 @@
           },
           body: JSON.stringify({
             uuid: "65fe1234567890abcdef9101",
-            message: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
+            message: "Name: " + name + "\nEmail: " + email + "\nPhone: " + phone + "\nMessage: " + message
           }),
         });
         
