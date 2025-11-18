@@ -1,0 +1,5 @@
+# Netlify Redirects (if using Netlify)
+# For GitHub Pages, use the Jekyll redirect plugin or custom solution below
+
+/ads.txt  https://srv.adstxtmanager.com/19390/mohitkoli.info  301
+

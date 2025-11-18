@@ -1,0 +1,9 @@
+# Jekyll Configuration for GitHub Pages
+# Enable redirects for ads.txt
+
+plugins:
+  - jekyll-redirect-from
+
+# GitHub Pages supported plugins
+# Make sure jekyll-redirect-from is in your Gemfile or use GitHub Pages' built-in redirects
+

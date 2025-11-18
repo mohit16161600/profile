@@ -20,7 +20,8 @@
     RewriteRule ^ %1 [R=301,L]
     
     # Ezoic Ads.txt Manager Redirect
-    RewriteRule ^ads\.txt$ https://srv.adstxtmanager.com/19390/mohitkoli.info [R=301,L]
+    # NOTE: This won't work on GitHub Pages - use Cloudflare, Netlify, or custom domain redirect instead
+    # RewriteRule ^ads\.txt$ https://srv.adstxtmanager.com/19390/mohitkoli.info [R=301,L]
     
     # Remove .html extension (optional - for cleaner URLs)
     # RewriteCond %{REQUEST_FILENAME} !-d
