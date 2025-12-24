@@ -3,6 +3,12 @@
 
 window.BLOG_POSTS = [
   {
+    title: 'Frontend vs Backend Development – What Should You Learn First?',
+    date: 'Dec 24, 2025',
+    href: 'blogs/blog6.html',
+    imageSrc: 'assets/website%20developer.png',
+  },
+  {
     title: 'Complete Guide to AI in Web Development: 2025',
     date: 'Jan 15, 2025',
     href: 'blogs/blog1.html',

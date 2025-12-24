@@ -1,21 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /assets/
-Crawl-delay: 1
-
-# Sitemaps
 Sitemap: https://www.mohitkoli.info/sitemap.xml
-
-# Specific bot rules
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 0
-
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 0
-
-User-agent: Slurp
-Allow: /
-Crawl-delay: 1
-
