@@ -26,6 +26,16 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.mohitkoli.info/privacy-policy.html</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.mohitkoli.info/terms.html</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://www.mohitkoli.info/blogs/blog1.html</loc>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
