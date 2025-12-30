@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohit Koli | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-50 text-gray-800 ">
 
   <!-- Navbar -->
@@ -21,18 +23,14 @@
           <li><a href="#work" class="hover:text-blue-700">My Work</a></li>
           <li><a href="#experience" class="hover:text-blue-700">Experience</a></li>
           <li><a href="#skills" class="hover:text-blue-700">Skills</a></li>
-          <li><a href="blogs/blogs.html" class="hover:text-blue-700" title="Read technology articles on the blog">Blog</a></li>
+          <li><a href="blogs.html" class="hover:text-blue-700" title="Read technology articles on the blog">Blog</a>
+          </li>
         </ul>
       </nav>
 
       <!-- Mobile Hamburger -->
-      <button
-        id="menu-btn"
-        class="md:hidden flex flex-col space-y-1.5 focus:outline-none"
-        aria-controls="mobile-drawer"
-        aria-expanded="false"
-        aria-label="Open menu"
-      >
+      <button id="menu-btn" class="md:hidden flex flex-col space-y-1.5 focus:outline-none" aria-controls="mobile-drawer"
+        aria-expanded="false" aria-label="Open menu">
         <span class="w-6 h-0.5 bg-gray-800"></span>
         <span class="w-6 h-0.5 bg-gray-800"></span>
         <span class="w-6 h-0.5 bg-gray-800"></span>
@@ -41,25 +39,20 @@
   </header>
 
   <!-- Overlay -->
-  <div
-    id="overlay"
-    class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out z-40"
-  ></div>
+  <div id="overlay"
+    class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out z-40">
+  </div>
 
   <!-- Right Drawer -->
-  <nav
-    id="mobile-drawer"
+  <nav id="mobile-drawer"
     class="fixed right-0 top-0 h-full w-72 max-w-[85vw] bg-white shadow-lg z-50 translate-x-full transition-transform duration-300 ease-in-out md:hidden"
-    aria-labelledby="menu-btn"
-  >
+    aria-labelledby="menu-btn">
     <div class="px-6 py-4 flex items-center justify-between border-b">
       <span class="text-base font-semibold">Menu</span>
       <button id="close-btn" class="p-2 rounded hover:bg-gray-100" aria-label="Close menu">
         <!-- simple X icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-             viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                d="M6 18L18 6M6 6l12 12"/>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
     </div>
@@ -69,7 +62,7 @@
       <li><a href="#work" class="hover:text-blue-700 mobile-menu-link" role="menuitem">My Work</a></li>
       <li><a href="#experience" class="hover:text-blue-700 mobile-menu-link" role="menuitem">Experience</a></li>
       <li><a href="#skills" class="hover:text-blue-700 mobile-menu-link" role="menuitem">Skills</a></li>
-      <li><a href="blogs/blogs.html" class="hover:text-blue-700 mobile-menu-link" role="menuitem">Blog</a></li>
+      <li><a href="blogs.html" class="hover:text-blue-700 mobile-menu-link" role="menuitem">Blog</a></li>
     </ul>
   </nav>
 
@@ -154,4 +147,5 @@
     });
   </script>
 </body>
+
 </html>
