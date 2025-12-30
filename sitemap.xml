@@ -1,9 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.mohitkoli.info/</loc>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/mohit-koli-coding-setup-3.jpg</image:loc>
+      <image:title>Mohit Koli Professional Coding Setup</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/mohit-koli-developer-life-1.jpg</image:loc>
+      <image:title>Mohit Koli Developer Life</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/mohit-koli-full-stack-4.jpg</image:loc>
+      <image:title>Mohit Koli Full Stack Developer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/mohit-koli-react-specialist-13.jpg</image:loc>
+      <image:title>Mohit Koli React Specialist</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/mohit-koli-php-expert-11.jpg</image:loc>
+      <image:title>Mohit Koli PHP Expert</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/mohit-koli-laravel-developer-12.jpg</image:loc>
+      <image:title>Mohit Koli Laravel Developer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/mohit-koli-youtube-creator-5.jpg</image:loc>
+      <image:title>Mohit Koli YouTube Creator</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/mohit-koli-tech-influencer-18.jpg</image:loc>
+      <image:title>Mohit Koli Tech Influencer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/mohit-koli-instagram-23.jpg</image:loc>
+      <image:title>Mohit Koli Instagram Creator</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/mohit-koli-web-projects-16.jpg</image:loc>
+      <image:title>Mohit Koli Web Projects</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/mohit-koli-web-design-8.jpg</image:loc>
+      <image:title>Mohit Koli Web Design</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/mohit-koli-software-architect-19.jpg</image:loc>
+      <image:title>Mohit Koli Software Architect</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/mohit-koli-software-engineer-9.jpg</image:loc>
+      <image:title>Mohit Koli Software Engineer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/mohit-koli-programmer-7.jpg</image:loc>
+      <image:title>Mohit Koli Programmer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/mohit-koli-profile-21.jpg</image:loc>
+      <image:title>Mohit Koli Profile</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.mohitkoli.info/assets/mohit-koli-setup-24.jpg</image:loc>
+      <image:title>Mohit Koli Workspace</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.mohitkoli.info/index.html</loc>
