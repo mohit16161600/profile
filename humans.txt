@@ -1,6 +1,6 @@
 /* TEAM */
 Developer: Mohit Koli
-Site: https://www.mohitkoli.info
+Site: https://mohitkoli.info
 Email: contact@mohitkoli.info
 Twitter: @mohitko86979490
 Location: India
