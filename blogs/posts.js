@@ -3,6 +3,12 @@
 
 window.BLOG_POSTS = [
   {
+    title: 'Is React Still Worth Learning in 2026? Expert Analysis',
+    date: 'Jan 5, 2026',
+    href: 'blogs/blog7.html',
+    imageSrc: 'assets/blog7.jpg',
+  },
+  {
     title: 'Frontend vs Backend Development – What Should You Learn First?',
     date: 'Dec 24, 2025',
     href: 'blogs/blog6.html',

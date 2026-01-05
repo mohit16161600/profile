@@ -1,4 +1,4 @@
-(function renderPopularPosts(){
+(function renderPopularPosts() {
   if (!window.BLOG_POSTS || !Array.isArray(window.BLOG_POSTS)) return;
   var container = document.getElementById('popular-posts');
   if (!container) return;
@@ -8,13 +8,13 @@
   var prefix = isInBlogsDir ? '../' : '';
 
   var popular = window.BLOG_POSTS.slice(0, 5);
-  popular.forEach(function(post){
+  popular.forEach(function (post) {
     var item = document.createElement('div');
     item.className = 'flex';
 
     var thumb = document.createElement('img');
     thumb.src = post.imageSrc ? (isInBlogsDir && post.imageSrc.indexOf('../') !== 0 && post.imageSrc.indexOf('http') !== 0 ? prefix + post.imageSrc : post.imageSrc) : '';
-    thumb.alt = post.title || 'Post thumbnail';
+    thumb.alt = (post.title ? post.title + ' - Guide by Web Developer Mohit Koli' : 'Web Developer Mohit Koli Blog Post');
     thumb.className = 'w-16 h-16 object-cover rounded-lg mr-3 flex-shrink-0';
 
     var right = document.createElement('div');
